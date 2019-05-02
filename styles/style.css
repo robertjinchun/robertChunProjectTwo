@@ -178,4 +178,93 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   clip: rect(0 0 0);
   overflow: hidden;
 }
+
+html {
+  font-size: 20px;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 6.9rem;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 92px;
+}
+
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.1rem;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+label {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: 1px;
+  letter-spacing: 1.1px;
+}
+
+li {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 29px;
+}
+
+button {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 32px;
+}
+
+p {
+  font-size: 1.1rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.bTheB {
+  background-color: #fdfa69;
+}
+
+.primary {
+  background-color: #effdf3;
+}
+
+.secondary {
+  background-color: #fafafa;
+}
+
+.tertiary {
+  background-color: #4ceea7;
+}
+
+.footColor {
+  background-color: #2c2c2c;
+}
 /*# sourceMappingURL=style.css.map */
