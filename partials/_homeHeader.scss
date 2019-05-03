@@ -1,0 +1,56 @@
+header{
+
+    @include backgroundSet(url("../assets/headerImage.jpg"));
+    @extend %backKeep;
+    @include flexEnable(true, false, true, false);
+    border:3px solid red;
+    width:100vw;
+    height:80vh;
+    max-height:800px;
+    min-height:600px;
+    
+    .ultimateWrapper{
+        position:relative;
+        z-index:0;
+        max-width:1600px;
+        min-height:600px;
+        width:100%;
+        height:100%;
+        @include flexEnable(true, true, false, true);
+        justify-content:space-between;
+        border:3px solid orange;
+    }
+    nav{
+        @include flexEnable(true);
+        justify-content:flex-end;
+        width:100%;
+        margin-top:2%;
+        ul{
+            @include flexEnable();
+        }
+    }
+    .photoContainer{
+        position:absolute;
+        z-index:-10;
+        font-size:0;
+        bottom:-25%;
+        right:0;
+        max-width:700px;
+        max-height:auto;
+        border-color:$bTheB;
+        border-left:45px solid $bTheB;
+        border-top:50px solid $bTheB;
+        border-bottom:50px solid $bTheB;
+        // background-color:yellow;
+        img{
+            width:100%;
+        }
+    }
+    .mainTitle{
+        border:3px solid brown;
+        // @extend .flexEnableLR;
+        // justify-content:center;
+        //height:100%;
+    }
+}
+

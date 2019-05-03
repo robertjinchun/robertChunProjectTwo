@@ -1,7 +1,21 @@
+
 @mixin fontSet($fSize){
-    font-family: 'Playfair Display', serif;
     font-size:$fSize;
-    font-style:italic;
-    font-weight:700;
-    letter-spacing:1px;
+}
+@mixin backgroundSet($backPic){
+    background-image:$backPic;
+}
+@mixin flexEnable($lR:true, $uD:false, $centerLR:false, $centerUD:false){
+    @if $lR{
+        display:flex;
+    }
+    @if $uD{
+        flex-direction:column;
+    }
+    @if $centerLR{
+        justify-content:center;
+    }
+    @if $centerUD{
+        align-items:center;
+    }
 }
