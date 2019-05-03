@@ -24,7 +24,7 @@ a, li, ul, h1, h2, h3, h4, header, body, footer{
     background-repeat:no-repeat;
 }
 
-// headers
+// Setting almost all fonts
 h1{
     @include fontSet(6.9rem);
     @extend %fontKeep;
@@ -54,7 +54,7 @@ li{
     @extend %fontKeep;
     line-height:29px;
 }
-button{
+button, .linkButton{
     @include fontSet(1.1rem);
     @extend %fontKeep;
     line-height:32px;
@@ -83,4 +83,11 @@ nav{
         margin:0 15px 0 15px;
     }
 }
+    .buttonArea{
+        @include flexEnable(true, false, true, false);
+        // width:100%;
+        // height:auto;
+        padding:20px;
+        background-color:$tertiary;
+    }
 
