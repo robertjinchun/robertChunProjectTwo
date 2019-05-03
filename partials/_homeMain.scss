@@ -1,0 +1,15 @@
+main{
+    // background-color:$primary;
+    @include flexEnable(true, false, true, false);
+    border:3px solid red;
+    width:100vw;
+
+    .whatIsCaptured{
+        background-color:$primary;
+        @include flexEnable(true, true, true, true);
+        border:3px solid purple;
+        height:60vh;
+        max-height:600px;
+        width:100%;
+    }
+}
