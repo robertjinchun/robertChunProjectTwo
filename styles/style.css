@@ -205,6 +205,11 @@ header {
   background-repeat: no-repeat;
 }
 
+main .whatIsCap {
+  border: 3px solid purple;
+  width: 100vw;
+}
+
 h1 {
   font-size: 6.9rem;
 }
@@ -244,6 +249,7 @@ p {
 
 nav {
   border: 3px solid red;
+  margin-right: 20%;
 }
 
 nav li:nth-child(n+2):nth-child(-n+3) {
@@ -353,7 +359,15 @@ main {
   width: 100vw;
 }
 
-main .whatIsCaptured {
+main .absolute {
+  position: absolute;
+}
+
+main .relative {
+  position: relative;
+}
+
+main .whatIsCap {
   background-color: #effdf3;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -368,11 +382,9 @@ main .whatIsCaptured {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 3px solid purple;
-  width: 100vw;
 }
 
-main .upDown {
+main .centerAll {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -391,5 +403,87 @@ main .upDown {
   min-height: 300px;
   margin: 200px 0 200px 0;
   border: 3px solid black;
+}
+
+main .gridSec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 3px solid green;
+  width: 100%;
+}
+
+main .gridSec aside, main .gridSec article {
+  width: 50%;
+}
+
+main img {
+  width: 100%;
+}
+
+main .gridPics {
+  border: 3px solid teal;
+  font-size: 0;
+  width: 85%;
+}
+
+main .firstPic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: -15%;
+  left: 0;
+  -webkit-box-shadow: 50px 40px #fdfa69;
+          box-shadow: 50px 40px #fdfa69;
+}
+
+main .secondPic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  top: 15%;
+  right: 0;
+  -webkit-box-shadow: -50px 40px #fdfa69;
+          box-shadow: -50px 40px #fdfa69;
+}
+
+main .textRight {
+  margin-left: 15%;
+}
+
+main .textLeft {
+  margin-right: 15%;
+}
+
+main .topArticleText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .oneByTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 3px solid red;
+  padding: 5% 0 2% 0;
+}
+
+main .oneByTwo .buttonArea {
+  width: 200px;
 }
 /*# sourceMappingURL=style.css.map */

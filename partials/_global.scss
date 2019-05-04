@@ -23,6 +23,11 @@ a, li, ul, h1, h2, h3, h4, header, body, footer{
     background-position:center;
     background-repeat:no-repeat;
 }
+%fullBleedWrap{
+    
+    border:3px solid purple;
+    width:100vw;
+}
 
 // Setting almost all fonts
 h1{
@@ -74,6 +79,7 @@ $footColor: #2c2c2c;
 
 nav{
     border:3px solid red;
+    margin-right:20%;
     // @extend .flexEnableLR;
     // justify-content:flex-end;
     ul{

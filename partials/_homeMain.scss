@@ -4,15 +4,33 @@ main{
     border:3px solid red;
     width:100vw;
 
+    // aside, article{
+    //     width:50vw;
+    //     height:auto;
+    // }
+    // aside{
+    //     div{
+    //         width:80%;
+    //         img{
+    //             width:100%;
+    //             object-fit: contain;
+    //             height:auto;
+    //         }
+    //     }
+    // }
+    .absolute{
+        position:absolute;
+    }
+    .relative{
+        position:relative;
+    }
 
-    .whatIsCaptured{
+    .whatIsCap{
         background-color:$primary;
         @include flexEnable(true, true, true, true);
-        border:3px solid purple;
-        // height:60vh;
-        width:100vw;
+        @extend %fullBleedWrap;
     }
-        .upDown{
+    .centerAll{
         @include flexEnable(true, true, true, true);
         text-align:center;
         max-width:1300px;
@@ -20,4 +38,62 @@ main{
         margin:200px 0 200px 0;
         border:3px solid black;
     }
+    .gridSec{
+        @include flexEnable(true, false, false, false);
+        border:3px solid green;
+        width:100%;
+        aside, article{
+            width:50%;
+        }
+    }
+
+    img{
+        // object-fit:contain;
+        width:100%
+    }
+    
+    //you can delete this one
+    .gridPics{
+        border:3px solid teal;
+        font-size:0;
+        width:85%
+    }
+    .firstPic{
+        @include flexEnable (true);
+        top:-15%;
+        left:0;
+        box-shadow: 50px 40px $bTheB;
+    }
+    .secondPic{
+        @include flexEnable (true);
+        justify-content:flex-end;
+        top:15%;
+        right:0;
+        box-shadow: -50px 40px $bTheB;
+    }
+    .textRight{
+        margin-left:15%;
+    }
+    .textLeft{
+        margin-right:15%;
+    }
+    .topArticleText{
+        @include flexEnable(true, true);
+
+    }
+    .oneByTwo{
+        @include flexEnable(true, true, true, false);
+        border:3px solid red;
+        padding:5% 0 2% 0;
+        .buttonArea{
+            width:200px;
+        }
+    }
+    // .oneByTwo{
+    //     @include flexEnable(true, true, true, false);
+    //     width:50%;
+    //     height:100%;
+    //     border:3px solid black;
+    // }
+    
 }
