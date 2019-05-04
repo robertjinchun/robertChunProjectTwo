@@ -205,7 +205,7 @@ header {
   background-repeat: no-repeat;
 }
 
-main .whatIsCap {
+main .bleed {
   border: 3px solid purple;
   width: 100vw;
 }
@@ -367,7 +367,7 @@ main .relative {
   position: relative;
 }
 
-main .whatIsCap {
+main .bleed {
   background-color: #effdf3;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -384,7 +384,7 @@ main .whatIsCap {
           align-items: center;
 }
 
-main .centerAll {
+main .whatIsCap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -485,5 +485,67 @@ main .oneByTwo {
 
 main .oneByTwo .buttonArea {
   width: 200px;
+}
+
+main .midContentTwo {
+  padding: 10% 0 10% 0;
+}
+
+main .quickContentRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1% 7% 1% 7%;
+}
+
+main .quickContentRow .quickInner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .quickContentRowTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .sideSide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .iconContent {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  background-color: #4ceea7;
+  border-radius: 50%;
+}
+
+main .iconContent i {
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
