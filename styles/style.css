@@ -199,13 +199,13 @@ h1, h2, h3, h4, label, li, button, .linkButton {
   letter-spacing: 1px;
 }
 
-header, main .secondHeader {
+.homeHeader, .homeMain .secondHeader, .blogHead {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-footer, main .bleed, main .secondHeader {
+footer, .homeMain .bleed, .homeMain .secondHeader {
   border: 3px solid purple;
   width: 100vw;
 }
@@ -279,7 +279,7 @@ footer p {
   color: #fafafa;
 }
 
-header {
+.homeHeader {
   background-image: url("../assets/headerImage.jpg");
   display: -webkit-box;
   display: -ms-flexbox;
@@ -295,7 +295,7 @@ header {
   min-height: 600px;
 }
 
-header .ultimateWrapper {
+.ultimateWrapper {
   z-index: 0;
   max-width: 1600px;
   min-height: 600px;
@@ -317,7 +317,7 @@ header .ultimateWrapper {
   border: 3px solid orange;
 }
 
-header nav {
+nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -328,13 +328,13 @@ header nav {
   margin-top: 2%;
 }
 
-header nav ul {
+nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-header .photoContainer {
+.photoContainer {
   position: absolute;
   width: 40%;
   z-index: -10;
@@ -348,15 +348,15 @@ header .photoContainer {
   border-bottom: 50px solid #fdfa69;
 }
 
-header .photoContainer img {
+.photoContainer img {
   width: 100%;
 }
 
-header .mainTitle {
+.mainTitle {
   border: 3px solid brown;
 }
 
-main {
+.homeMain {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -371,15 +371,15 @@ main {
   width: 100vw;
 }
 
-main .absolute {
+.homeMain .absolute {
   position: absolute;
 }
 
-main .relative {
+.homeMain .relative {
   position: relative;
 }
 
-main .bleed {
+.homeMain .bleed {
   background-color: #effdf3;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -396,7 +396,7 @@ main .bleed {
           align-items: center;
 }
 
-main .whatIsCap {
+.homeMain .whatIsCap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -417,7 +417,7 @@ main .whatIsCap {
   border: 3px solid black;
 }
 
-main .gridSec {
+.homeMain .gridSec {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -425,21 +425,21 @@ main .gridSec {
   width: 100%;
 }
 
-main .gridSec aside, main .gridSec article {
+.homeMain .gridSec aside, .homeMain .gridSec article {
   width: 50%;
 }
 
-main img {
+.homeMain img {
   width: 100%;
 }
 
-main .gridPics {
+.homeMain .gridPics {
   border: 3px solid teal;
   font-size: 0;
   width: 85%;
 }
 
-main .firstPic {
+.homeMain .firstPic {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -449,7 +449,7 @@ main .firstPic {
           box-shadow: 50px 40px #fdfa69;
 }
 
-main .secondPic {
+.homeMain .secondPic {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -462,15 +462,15 @@ main .secondPic {
           box-shadow: -50px 40px #fdfa69;
 }
 
-main .textRight {
+.homeMain .textRight {
   margin-left: 15%;
 }
 
-main .textLeft {
+.homeMain .textLeft {
   margin-right: 15%;
 }
 
-main .topArticleText {
+.homeMain .topArticleText {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -480,7 +480,7 @@ main .topArticleText {
           flex-direction: column;
 }
 
-main .oneByTwo {
+.homeMain .oneByTwo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -495,15 +495,15 @@ main .oneByTwo {
   padding: 5% 0 2% 0;
 }
 
-main .oneByTwo .buttonArea {
+.homeMain .oneByTwo .buttonArea {
   width: 200px;
 }
 
-main .midContentTwo {
+.homeMain .midContentTwo {
   padding: 10% 0 10% 0;
 }
 
-main .quickContentRow {
+.homeMain .quickContentRow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -513,7 +513,7 @@ main .quickContentRow {
   margin: 1% 7% 1% 7%;
 }
 
-main .quickContentRow .quickInner {
+.homeMain .quickContentRow .quickInner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -523,19 +523,19 @@ main .quickContentRow .quickInner {
           flex-direction: column;
 }
 
-main .quickContentRowTwo {
+.homeMain .quickContentRowTwo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-main .sideSide {
+.homeMain .sideSide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-main .iconContent {
+.homeMain .iconContent {
   width: 50px;
   height: 50px;
   margin-right: 20px;
@@ -543,7 +543,7 @@ main .iconContent {
   border-radius: 50%;
 }
 
-main .iconContent i {
+.homeMain .iconContent i {
   width: 50px;
   height: 50px;
   display: -webkit-box;
@@ -561,7 +561,7 @@ main .iconContent i {
           align-items: center;
 }
 
-main .secondHeader {
+.homeMain .secondHeader {
   background-image: url("../assets/banner.jpg");
   display: -webkit-box;
   display: -ms-flexbox;
@@ -574,7 +574,7 @@ main .secondHeader {
   border: 3px solid red;
 }
 
-main .singleBlog {
+.homeMain .singleBlog {
   padding: 7% 0 7% 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -585,7 +585,7 @@ main .singleBlog {
   background-color: #effdf3;
 }
 
-main .singleBlog .gridSingleBlog {
+.homeMain .singleBlog .gridSingleBlog {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -596,7 +596,7 @@ main .singleBlog .gridSingleBlog {
   width: 85%;
 }
 
-main .singleBlog .gridSingleBlog article {
+.homeMain .singleBlog .gridSingleBlog article {
   width: 70%;
   border: 3px solid blue;
   margin-left: 5%;
@@ -612,7 +612,7 @@ main .singleBlog .gridSingleBlog article {
           justify-content: center;
 }
 
-main .singleBlog .gridSingleBlog aside {
+.homeMain .singleBlog .gridSingleBlog aside {
   width: 30%;
   border: 3px solid blue;
   margin-right: 5%;
@@ -631,18 +631,18 @@ main .singleBlog .gridSingleBlog aside {
           align-items: center;
 }
 
-main .singleBlog .gridSingleBlog aside div {
+.homeMain .singleBlog .gridSingleBlog aside div {
   width: 100%;
   font-size: 0;
   -webkit-box-shadow: 50px 40px #fdfa69;
           box-shadow: 50px 40px #fdfa69;
 }
 
-main .singleBlog .buttonArea {
+.homeMain .singleBlog .buttonArea {
   width: 300px;
 }
 
-main .gallery {
+.homeMain .gallery {
   padding: 7% 0 7% 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -652,7 +652,7 @@ main .gallery {
           justify-content: center;
 }
 
-main .galleryContainer {
+.homeMain .galleryContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -666,7 +666,7 @@ main .galleryContainer {
   width: 85%;
 }
 
-main .galleryContainer div {
+.homeMain .galleryContainer div {
   width: 33.3%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -676,7 +676,7 @@ main .galleryContainer div {
           justify-content: center;
 }
 
-main .galleryContainer img {
+.homeMain .galleryContainer img {
   width: 90%;
   border: 3px solid red;
 }
@@ -691,5 +691,114 @@ footer section {
 
 footer p {
   color: #fafafa;
+}
+
+.blogHead {
+  background-image: url("../assets/blogHeader.jpg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  border: 3px solid red;
+  width: 100vw;
+  height: 50vh;
+  max-height: 700px;
+  min-height: 700px;
+}
+
+.blogHead .blogHeadAlign {
+  max-width: 1600px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 3px solid orange;
+}
+
+.blogHead .blogHeadAlign .blogTitle {
+  margin-top: 10%;
+}
+
+.blogHead .blogPhotoContainer {
+  position: absolute;
+  width: 55%;
+  z-index: 10;
+  font-size: 0;
+  right: 0;
+  -webkit-box-shadow: -40px 40px #fdfa69;
+          box-shadow: -40px 40px #fdfa69;
+}
+
+.blogHead .blogPhotoContainer img {
+  width: 100%;
+}
+
+.blogHead nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  margin-top: 2%;
+}
+
+.blogHead nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blogMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 3px solid red;
+  width: 100vw;
+  background-color: #effdf3;
+}
+
+.blogMainContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+  padding-top: 5%;
+  border: 3px solid purple;
+}
+
+.blogMainContainer aside {
+  width: 37%;
+}
+
+.blogMainContainer article {
+  width: 63%;
+  padding-left: 4%;
+  padding-top: 15%;
+  border: 3px solid green;
+}
+
+.blogMainContainer article .permBorderLeft {
+  padding-left: 5%;
+  padding-top: 15%;
+  border-left: 7px solid #fdfa69;
+  border-bottom: 7px solid #fdfa69;
 }
 /*# sourceMappingURL=style.css.map */

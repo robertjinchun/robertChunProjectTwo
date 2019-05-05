@@ -1,0 +1,31 @@
+.blogMain{
+    @include flexEnable(true, false, true, false);
+    border:3px solid red;
+    width:100vw;
+    background-color:$primary;
+}
+.blogMainContainer{
+    @include flexEnable(true, false, true, false);
+    width:80%;
+    padding-top:5%;
+    border:3px solid purple;
+    aside{
+        width:37%;
+    }
+    article{
+        width:63%;
+        padding-left:4%;
+        padding-top:15%;
+        border:3px solid green;
+        .permBorderLeft{
+            padding-left:5%;
+            padding-top:15%;
+            border-left:7px solid $bTheB;
+            border-bottom:7px solid $bTheB;
+            // padding-left:5%;
+            // border-left:5px solid $bTheB;
+
+        }
+    }
+
+}

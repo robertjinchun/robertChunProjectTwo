@@ -1,0 +1,53 @@
+.blogHead{
+    @include backgroundSet(url("../assets/blogHeader.jpg"));
+    @extend %backKeep;
+    @include flexEnable(true, false, true, false);
+    position:relative;
+    border:3px solid red;
+    width:100vw;
+    height:50vh;
+    max-height:700px;
+    min-height:700px;
+    
+    .blogHeadAlign{
+    max-width:1600px;
+    // min-height:600px;
+    width:100%;
+    // height:100%;
+    @include flexEnable(true, true, false, true);
+    // justify-content:space-between;
+    border:3px solid orange;
+        .blogTitle{
+            margin-top:10%;
+        }
+    }
+    .blogPhotoContainer{
+    position:absolute;
+    width:55%;
+    z-index:10;
+    font-size:0;
+    // bottom:-25%;
+    right:0;
+    box-shadow:-40px 40px $bTheB;
+        // max-width:700px;
+    // max-height:auto;
+    // border-color:$bTheB;
+    // border-left:45px solid $bTheB;
+    // border-top:50px solid $bTheB;
+    // border-bottom:50px solid $bTheB;
+        // background-color:yellow;
+    img{
+        width:100%;
+    }
+    }
+
+    nav{
+        @include flexEnable(true);
+        justify-content:flex-end;
+        width:100%;
+        margin-top:2%;
+        ul{
+            @include flexEnable();
+        }
+    }
+}
