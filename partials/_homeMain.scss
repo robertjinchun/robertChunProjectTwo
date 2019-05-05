@@ -102,6 +102,74 @@ main{
             @include flexEnable(true, true, true, true);
         }
     }
+    .secondHeader{
+    @include backgroundSet(url("../assets/banner.jpg"));
+    @extend %backKeep;
+    @include flexEnable(true, false, true, false);
+    @extend %fullBleedWrap;
+    height:50vh;
+    position:relative;
+    border:3px solid red;
+    }
+
+    
+    .singleBlog{
+        padding:7% 0 7% 0;
+        @include flexEnable(true, false, true, false);
+        background-color:$primary;
+        
+        .gridSingleBlog{
+            @include flexEnable(true, false, true, false);
+            border:3px solid green;
+            width:85%;
+            article, aside{
+                
+            }
+            article{
+                width:70%;
+                border:3px solid blue;
+                margin-left:5%;
+                @include flexEnable(true, true, true, false);
+            }
+            aside{
+                width:30%;
+                border:3px solid blue;
+                margin-right:5%;
+                @include flexEnable(true, true, true, true);
+                div{
+                    width:100%;
+                    font-size:0;
+                    box-shadow: 50px 40px $bTheB;
+                }
+                // div{
+                //     width:100px;
+                // }
+            }
+        }
+        .buttonArea{
+            width:300px;
+        }
+    }
+    .gallery{
+        padding:7% 0 7% 0;
+        @include flexEnable(true, false, true, false);
+        // background-color:$primary;
+        
+    }
+    .galleryContainer{
+        @include flexEnable(true, false, true, false);
+        justify-content:space-between;
+        border:3px solid green;
+        width:85%;
+        div{
+            width:33.3%;
+            @include flexEnable(true, false, true, false);
+        }
+        img{
+            width:90%;
+            border:3px solid red;
+        }
+    }
     
     
 }

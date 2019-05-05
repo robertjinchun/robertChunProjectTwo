@@ -199,13 +199,13 @@ h1, h2, h3, h4, label, li, button, .linkButton {
   letter-spacing: 1px;
 }
 
-header {
+header, main .secondHeader {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-main .bleed {
+main .bleed, main .secondHeader {
   border: 3px solid purple;
   width: 100vw;
 }
@@ -547,5 +547,125 @@ main .iconContent i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+main .secondHeader {
+  background-image: url("../assets/banner.jpg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50vh;
+  position: relative;
+  border: 3px solid red;
+}
+
+main .singleBlog {
+  padding: 7% 0 7% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #effdf3;
+}
+
+main .singleBlog .gridSingleBlog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 3px solid green;
+  width: 85%;
+}
+
+main .singleBlog .gridSingleBlog article {
+  width: 70%;
+  border: 3px solid blue;
+  margin-left: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .singleBlog .gridSingleBlog aside {
+  width: 30%;
+  border: 3px solid blue;
+  margin-right: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .singleBlog .gridSingleBlog aside div {
+  width: 100%;
+  font-size: 0;
+  -webkit-box-shadow: 50px 40px #fdfa69;
+          box-shadow: 50px 40px #fdfa69;
+}
+
+main .singleBlog .buttonArea {
+  width: 300px;
+}
+
+main .gallery {
+  padding: 7% 0 7% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .galleryContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 3px solid green;
+  width: 85%;
+}
+
+main .galleryContainer div {
+  width: 33.3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .galleryContainer img {
+  width: 90%;
+  border: 3px solid red;
 }
 /*# sourceMappingURL=style.css.map */
