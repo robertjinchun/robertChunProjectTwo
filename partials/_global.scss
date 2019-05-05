@@ -3,7 +3,7 @@ html{
     font-size:20px;
 }
 
-a, li, ul, h1, h2, h3, h4, header, body, footer{
+a, li, ul, h1, h2, h3, h4, header, body, footer, p{
     color:black;
     text-decoration:none;
     list-style-type:none;
@@ -97,4 +97,14 @@ nav{
         background-color:$tertiary;
         // width:200px;
     }
-
+footer{
+    @extend %fullBleedWrap;
+    background-color:$footColor;
+    section{
+        text-align:center;
+        
+    }
+    p{
+        color:$secondary;
+    }
+}

@@ -173,3 +173,14 @@ main{
     
     
 }
+footer{
+    @extend %fullBleedWrap;
+    background-color:$footColor;
+    section{
+        text-align:center;
+        
+    }
+    p{
+        color:$secondary;
+    }
+}
