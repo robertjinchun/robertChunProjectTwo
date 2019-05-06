@@ -1,0 +1,60 @@
+.formHead{
+    @include backgroundSet(url("../assets/contactHeader.jpg"));
+    @extend %backKeep;
+    @include flexEnable(true, false, true, false);
+    position:relative;
+    border:3px solid red;
+    width:100vw;
+    height:50vh;
+    max-height:700px;
+    min-height:400px;
+    input{
+        color:black;
+        
+    }
+    
+    .formHeadAlign{
+    max-width:1600px;
+    // min-height:600px;
+    width:100%;
+    // height:100%;
+    @include flexEnable(true, true, false, true);
+    // justify-content:space-between;
+    border:3px solid orange;
+        .formTitle{
+            margin:10% 0 0 15%;
+        }
+    }
+    .formContainer{
+    position:absolute;
+    background-color:white;
+    width:55%;
+    padding:30px;
+    z-index:10;
+    font-size:0;
+    // bottom:-25%;
+    right:7%;
+    top:70%;
+    box-shadow:-40px 40px $bTheB;
+        // max-width:700px;
+    // max-height:auto;
+    // border-color:$bTheB;
+    // border-left:45px solid $bTheB;
+    // border-top:50px solid $bTheB;
+    // border-bottom:50px solid $bTheB;
+        // background-color:yellow;
+    img{
+        width:100%;
+    }
+    }
+
+    nav{
+        @include flexEnable(true);
+        justify-content:flex-end;
+        width:100%;
+        margin-top:2%;
+        ul{
+            @include flexEnable();
+        }
+    }
+}
