@@ -33,6 +33,8 @@ nav{
 .photoContainer{
     position:absolute;
     width:40%;
+    // min-width:600px;
+    // min-height:600px;
     z-index:-10;
     font-size:0;
     bottom:-25%;
@@ -46,6 +48,8 @@ nav{
         // background-color:yellow;
     img{
         width:100%;
+        // min-height:600px;
+        // min-width:600px;
     }
     }
 .mainTitle{

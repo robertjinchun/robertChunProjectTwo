@@ -22,6 +22,11 @@
         min-height:300px;
         margin:200px 0 200px 0;
         border:3px solid black;
+        .buttonArea{
+            text-align:center;
+            margin:5% 0 3% 0;
+            // width:200px;
+        }
     }
     .gridSec{
         @include flexEnable(true, false, false, false);
@@ -39,7 +44,7 @@
     .gridPics{
         border:3px solid teal;
         font-size:0;
-        width:85%
+        // width:85%
     }
     .firstPic{
         @include flexEnable (true);
@@ -59,6 +64,10 @@
     }
     .textLeft{
         margin-right:15%;
+        align-items: flex-end;
+        text-align:right;
+    
+        // justify-content:flex-end;
     }
     .topArticleText{
         @include flexEnable(true, true);
@@ -67,13 +76,15 @@
     .oneByTwo{
         @include flexEnable(true, true, true, false);
         border:3px solid red;
-        padding:5% 0 2% 0;
+        padding:6% 0 2% 0;
         .buttonArea{
+            text-align:center;
+            margin:5% 0 3% 0;
             width:200px;
         }
     }
     .midContentTwo{
-        padding:10% 0 10% 0;
+        padding:15% 0 15% 0;
     }
     .quickContentRow{
         @include flexEnable(true, false, true, false);
@@ -107,7 +118,10 @@
     @extend %backKeep;
     @include flexEnable(true, false, true, false);
     @extend %fullBleedWrap;
+    // height:50vh;
+    // width:100%;
     height:50vh;
+    max-height:500px;
     position:relative;
     border:3px solid red;
     }
@@ -147,12 +161,15 @@
             }
         }
         .buttonArea{
+            margin:5% 0 3% 0;
+            text-align:center;
             width:300px;
         }
     }
     .gallery{
         padding:7% 0 7% 0;
         @include flexEnable(true, false, true, false);
+        width:100%;
         // background-color:$primary;
         
     }
