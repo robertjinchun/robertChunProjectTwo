@@ -192,7 +192,7 @@ a, li, ul, h1, h2, h3, h4, header, body, footer, p {
   padding: 0;
 }
 
-h1, h2, h3, h4, label, nav li, button, .linkButton {
+h1, h2, h3, h4, label, nav li:nth-child(n+1):nth-child(-n+4), button, .linkButton {
   font-family: 'Playfair Display', serif;
   font-style: italic;
   font-weight: 700;
@@ -231,9 +231,14 @@ label {
   letter-spacing: 1.1px;
 }
 
-nav li {
+nav li:nth-child(n+1):nth-child(-n+4) {
   font-size: 1.3rem;
   line-height: 29px;
+  display: inline-block;
+}
+
+nav li:nth-child(5) {
+  display: none;
 }
 
 main li {
@@ -937,7 +942,6 @@ footer p {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  border: 3px solid red;
   width: 100vw;
   height: 50vh;
   max-height: 700px;
@@ -961,7 +965,6 @@ footer p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 3px solid orange;
 }
 
 .formHead .formHeadAlign .formTitle {
@@ -1010,9 +1013,9 @@ footer p {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  border: 3px solid red;
   width: 100vw;
   height: 100%;
+  margin-bottom: 10%;
   background-color: #effdf3;
 }
 
@@ -1023,15 +1026,13 @@ footer p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 80%;
+  width: 90%;
   height: 100%;
   padding-top: 10%;
-  border: 3px solid purple;
 }
 
 .formMainContainer aside {
-  width: 37%;
-  border: 3px solid blue;
+  width: 100%;
 }
 
 .formMainContainer aside img {
@@ -1237,8 +1238,57 @@ footer p {
     display: none;
   }
   .commentHeaderPic img {
-    height: 50px;
-    width: 50px;
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .formHead .formContainer {
+    right: 20%;
+    top: 50%;
+  }
+  .formMain {
+    margin-top: 25%;
+  }
+  .formMainContainer article {
+    width: 0%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .formMain {
+    margin-top: 50%;
+  }
+}
+
+@media (max-width: 675px) {
+  nav {
+    margin-right: 20%;
+  }
+  nav li:nth-child(n+1):nth-child(-n+4) {
+    display: none;
+  }
+  nav li:nth-child(5) {
+    display: inline-block;
+  }
+  nav li:nth-child(5) i {
+    font-size: 30px;
+  }
+  .formHead .formContainer {
+    width: 85%;
+    right: 5%;
+  }
+  .formTitle h2 {
+    font-size: 2rem;
+    margin: 10% 0 0 0%;
+  }
+  .formMain {
+    margin-top: 100%;
+  }
+  .formMainContainer article {
+    height: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -55,10 +55,14 @@ label{
     letter-spacing:1.1px;
 }
 nav{
-    li{
+    li:nth-child(n+1):nth-child(-n+4){
     @include fontSet(1.3rem);
     @extend %fontKeep;
     line-height:29px;
+    display:inline-block;
+    }
+    li:nth-child(5){
+    display:none;
     }
 }
 main{
@@ -67,6 +71,8 @@ main{
         // @extend %fontKeep;
         line-height:29px;
     }
+    
+
 }
 button, .linkButton{
     @include fontSet(1.1rem);

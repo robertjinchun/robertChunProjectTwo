@@ -175,9 +175,75 @@
     }
     .commentHeaderPic{
         img{
-            height:50px;
-            width:50px;
+            height:100px;
+            width:100px;
         }
     }
+
+}
+
+//Media Queries for Form
+
+@media(max-width:1300px){
+    .formHead{
+        .formContainer{
+            right:20%;
+            top:50%;
+        }
+    }
+    .formMain{
+        margin-top:25%;
+    }
+    .formMainContainer{
+    article{
+        width:0%;
+        height:100%;
+    } 
+}
+
+}
+@media(max-width:900px){
+    .formMain{
+    margin-top:50%;
+    }
+}
+
+@media(max-width:675px){
+    nav{
+        margin-right:20%;
+    li:nth-child(n+1):nth-child(-n+4){
+    display:none;
+    }
+    li:nth-child(5){
+    display:inline-block;
+    
+    i{
+        font-size:30px;
+        
+    }
+    }
+}
+    .formHead{
+        .formContainer{
+            width:85%;
+            right:5%;
+        }
+
+    }
+    .formTitle{
+        h2{
+            font-size:2rem;
+            margin: 10% 0 0 0%;
+        }   
+    }
+    .formMain{
+        margin-top:100%;
+    }
+    .formMainContainer{
+    article{
+        // width:0%;
+        height:100%;
+    } 
+}
 
 }
