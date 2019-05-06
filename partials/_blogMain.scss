@@ -1,7 +1,7 @@
 .blogMain{
     @include flexEnable(true, false, true, false);
     position:relative;
-    border:3px solid red;
+    // border:3px solid red;
     width:100vw;
     height:100%;
     background-color:$primary;
@@ -11,10 +11,10 @@
     width:80%;
     height:100%;
     padding-top:5%;
-    border:3px solid purple;
+    // border:3px solid purple;
     aside{
         width:37%;
-        border:3px solid blue;
+        // border:3px solid blue;
         img{
             width:100%;
         }

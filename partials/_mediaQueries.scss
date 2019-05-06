@@ -31,4 +31,113 @@
     }
 }
 @media (max-width: 1100px) {
+    .gridSec{
+        justify-content:center;
+        flex-direction:column;
+        width:100%;
+    }
+    .gridSec{
+        // @include flexEnable(true, false, false, false);
+        // border:3px solid green;
+        width:100%;
+        aside, article{
+            width:100%;
+        }
+    }
+    img{
+        // object-fit:contain;
+        width:100%
+    }
+    .homeMain{
+        .absolute{
+            position:static;
+    }
+    }
+    
+    .firstPic, .secondPic{
+        min-width:600px;
+    }
+    .gridFlip{
+        flex-direction:column-reverse;
+    }
+    article{
+        width:100;
+    }
+    .gridSingleBlog{
+        article{
+            width:100%;
+        }
+        aside{
+            width:1005%;
+        }
+
+    }
+
 }
+
+@media (max-width: 900px) {
+    .singleBlog{
+        width:100%;
+        .gridSingleBlog{
+            @include flexEnable(true, true, false, true);
+            // border:3px solid green;
+            width:100%;
+            // article, aside{
+            //     width:50%;
+            // }
+            article{
+                width:100%;
+                // border:3px solid blue;
+                margin-top:5%;
+                @include flexEnable(true, true, true, false);
+            }
+            aside{
+                width:100%;
+                // border:3px solid blue;
+                // margin-right:5%;
+                // @include flexEnable(true, true, true, true);
+                div{
+                    width:100%;
+                    font-size:0;
+                    box-shadow: 50px 40px $bTheB;
+                }
+                // div{
+                //     width:100px;
+                // }
+            }
+        }
+        .buttonArea{
+            margin:5% 0 3% 0;
+            text-align:center;
+            width:300px;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .quickContentRow{
+        flex-direction:column;
+    }
+    .sideSide{
+        margin:5% 0 5% 0;
+    }
+}
+@media(max-width:750){
+    .homeMain{
+
+        .galleryContainer{
+        // padding:7% 0 7% 0;
+        // @include flexEnable(true, true, false, true);
+        display: flex;
+        flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+
+        // width:100%;
+        // background-color:$primary;
+        
+        }
+    }
+}
+
