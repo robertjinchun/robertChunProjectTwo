@@ -1044,6 +1044,14 @@ footer p {
   height: 100%;
 }
 
+.formMainContainer h4 {
+  margin: 2% 0 2% 0;
+}
+
+.formMainContainer p {
+  margin: 1% 0 1% 0;
+}
+
 .iconContainer {
   margin: 5% 0 5% 0;
 }
