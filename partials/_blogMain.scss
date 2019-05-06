@@ -1,19 +1,27 @@
 .blogMain{
     @include flexEnable(true, false, true, false);
+    position:relative;
     border:3px solid red;
     width:100vw;
+    height:100%;
     background-color:$primary;
 }
 .blogMainContainer{
     @include flexEnable(true, false, true, false);
     width:80%;
+    height:100%;
     padding-top:5%;
     border:3px solid purple;
     aside{
         width:37%;
+        border:3px solid blue;
+        img{
+            width:100%;
+        }
     }
     article{
         width:63%;
+        height:100%;
         padding-left:4%;
         padding-top:15%;
         border:3px solid green;
@@ -27,5 +35,44 @@
 
         }
     }
+    .sideBlogPicture{
+        position:absolute;
+        left:0%;
+        width:35%;
+    }
+    .sideBlogContent{
+        padding:110% 0 0 0;
+        // margin-right:10%;
+        li::before{
+            text-decoration:none;
+            list-style-type:none;
+            font-style:none;
+            font-weight:400;
+            content: "\2022";
+            color: $tertiary;
+            margin-right:30px;
+            // padding-left:20px;
+        }
+        li{
+            // padding-left:20px;
+        }
+  
+    }
+    .commentHeaderTitle{
+        margin:5% 0 5% 2%;
+    }
+    .commentHeaderContent{
+        margin:3% 0 7% 5%;
+    }
+    .commentHeaderPic{
+        margin-right:5%;
+    }
+    .commentVertical{
+        @include flexEnable(true, true, false, false);
+    }
+    .commentHorizontal{
+        @include flexEnable(true, false, false, false);
+    }
+    
 
 }

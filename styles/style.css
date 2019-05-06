@@ -192,7 +192,7 @@ a, li, ul, h1, h2, h3, h4, header, body, footer, p {
   padding: 0;
 }
 
-h1, h2, h3, h4, label, li, button, .linkButton {
+h1, h2, h3, h4, label, nav li, button, .linkButton {
   font-family: 'Playfair Display', serif;
   font-style: italic;
   font-weight: 700;
@@ -232,13 +232,19 @@ label {
   letter-spacing: 1.1px;
 }
 
-li {
+nav li {
   font-size: 1.3rem;
+  line-height: 29px;
+}
+
+main li {
+  font-size: 1.1rem;
   line-height: 29px;
 }
 
 button, .linkButton {
   font-size: 1.1rem;
+  width: 100%;
   line-height: 32px;
 }
 
@@ -264,6 +270,70 @@ nav li:nth-child(n+2):nth-child(-n+3) {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 20px;
+  background-color: #4ceea7;
+}
+
+.commentHorizontalCenter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.commentHorizontalCenter input {
+  width: 47%;
+  height: 61px;
+  border: 3px solid white;
+  border-bottom: 3px solid #4ceea7;
+}
+
+.formCenter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.formComment {
+  width: 100%;
+}
+
+.formComment input {
+  width: 100%;
+  height: 250px;
+  margin: 30px 0 30px 0;
+  border: 3px solid #4ceea7;
+}
+
+form {
+  border: 3px solid black;
+  width: 100%;
+  height: 500px;
+}
+
+.formButton {
+  width: 100%;
+  background-color: #4ceea7;
+}
+
+.formButton button {
+  padding: 10px 0 10px 0;
   background-color: #4ceea7;
 }
 
@@ -767,8 +837,10 @@ footer p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
   border: 3px solid red;
   width: 100vw;
+  height: 100%;
   background-color: #effdf3;
 }
 
@@ -780,16 +852,23 @@ footer p {
       -ms-flex-pack: center;
           justify-content: center;
   width: 80%;
+  height: 100%;
   padding-top: 5%;
   border: 3px solid purple;
 }
 
 .blogMainContainer aside {
   width: 37%;
+  border: 3px solid blue;
+}
+
+.blogMainContainer aside img {
+  width: 100%;
 }
 
 .blogMainContainer article {
   width: 63%;
+  height: 100%;
   padding-left: 4%;
   padding-top: 15%;
   border: 3px solid green;
@@ -800,5 +879,53 @@ footer p {
   padding-top: 15%;
   border-left: 7px solid #fdfa69;
   border-bottom: 7px solid #fdfa69;
+}
+
+.blogMainContainer .sideBlogPicture {
+  position: absolute;
+  left: 0%;
+  width: 35%;
+}
+
+.blogMainContainer .sideBlogContent {
+  padding: 110% 0 0 0;
+}
+
+.blogMainContainer .sideBlogContent li::before {
+  text-decoration: none;
+  list-style-type: none;
+  font-style: none;
+  font-weight: 400;
+  content: "\2022";
+  color: #4ceea7;
+  margin-right: 30px;
+}
+
+.blogMainContainer .commentHeaderTitle {
+  margin: 5% 0 5% 2%;
+}
+
+.blogMainContainer .commentHeaderContent {
+  margin: 3% 0 7% 5%;
+}
+
+.blogMainContainer .commentHeaderPic {
+  margin-right: 5%;
+}
+
+.blogMainContainer .commentVertical {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.blogMainContainer .commentHorizontal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */
