@@ -778,7 +778,7 @@ footer p {
   width: 100vw;
   height: 50vh;
   max-height: 700px;
-  min-height: 700px;
+  min-height: 500px;
 }
 
 .blogHead .blogHeadAlign {
@@ -806,7 +806,7 @@ footer p {
   width: 55%;
   z-index: 10;
   font-size: 0;
-  right: 0;
+  right: 0%;
   -webkit-box-shadow: -40px 40px #fdfa69;
           box-shadow: -40px 40px #fdfa69;
 }
@@ -1202,6 +1202,43 @@ footer p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media (max-width: 1300px) {
+  .blogHead .blogPhotoContainer {
+    right: 25%;
+  }
+  .blogHead .blogPhotoContainer img {
+    min-width: 300px;
+  }
+  .blogMainContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .blogMainContainer .sideBlogContent {
+    padding: 15% 0 0 0;
+  }
+  .blogMainContainer article {
+    width: 100%;
+    margin-right: 5%;
+    padding-top: 0%;
+  }
+  .blogMainContainer aside {
+    width: 85%;
+  }
+  .sideBlogPicture {
+    display: none;
+  }
+  .commentHeaderPic img {
+    height: 50px;
+    width: 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */

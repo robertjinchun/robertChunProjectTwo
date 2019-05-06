@@ -1,4 +1,4 @@
-//MediaQueries for homeHeader
+//MediaQueries for Header
 
 @media (max-width: 1600px) {
     .photoContainer{
@@ -141,3 +141,43 @@
     }
 }
 
+//Media Queries for Blog
+
+@media(max-width:1300px){
+    .blogHead{
+    .blogPhotoContainer{
+        right:25%;
+        img{
+        min-width:300px;
+        }
+    }
+    }
+    
+    .blogMainContainer{
+        flex-direction:column;
+        align-items:center;
+        width:100%;
+        .sideBlogContent{
+            padding: 15% 0 0 0;
+    }
+        article{
+            width:100%;
+            margin-right:5%;
+            padding-top:0%;
+
+        }
+        aside{
+            width:85%;
+        }
+    }
+    .sideBlogPicture{
+        display:none;
+    }
+    .commentHeaderPic{
+        img{
+            height:50px;
+            width:50px;
+        }
+    }
+
+}
