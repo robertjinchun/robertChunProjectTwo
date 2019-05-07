@@ -880,6 +880,7 @@ footer p {
       -ms-flex-pack: center;
           justify-content: center;
   width: 80%;
+  max-width: 1600px;
   padding-top: 5%;
 }
 
@@ -907,7 +908,8 @@ footer p {
 }
 
 .blogMainContainer .sideBlogPicture {
-  position: absolute;
+  -webkit-transform: scale(4.5) translatey(37%);
+          transform: scale(4.5) translatey(37%);
   left: 0%;
   width: 35%;
 }
