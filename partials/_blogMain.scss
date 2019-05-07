@@ -5,11 +5,17 @@
     width:100vw;
     height:100%;
     background-color:$primary;
+    h4{
+        margin:3% 0 3% 0;
+    }
+    p{
+        margin:1% 0 2% 0;
+    }
 }
 .blogMainContainer{
     @include flexEnable(true, false, true, false);
     width:80%;
-    height:100%;
+    // height:100%;
     padding-top:5%;
     // border:3px solid purple;
     aside{
