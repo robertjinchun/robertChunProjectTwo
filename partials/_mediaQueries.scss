@@ -143,7 +143,7 @@
 
 //Media Queries for Blog
 
-@media(max-width:1300px){
+@media(max-width:1000px){
     .blogHead{
     .blogPhotoContainer{
         right:25%;
@@ -154,7 +154,7 @@
     }
     
     .blogMainContainer{
-        flex-direction:column;
+        flex-direction:column-reverse;
         align-items:center;
         width:100%;
         .sideBlogContent{
@@ -179,7 +179,11 @@
             width:100px;
         }
     }
-
+    .blogMainContainer{
+        .blogPhotoContainer{
+            transform: scale(1.2) translatey(-40%) translatex(8%);
+        }
+    }
 }
 
 //Media Queries for Form

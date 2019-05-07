@@ -2,8 +2,8 @@
     @include flexEnable(true, false, true, false);
     position:relative;
     // border:3px solid red;
-    width:100vw;
-    height:100%;
+    width:100%;
+    // height:100%;
     background-color:$primary;
     h4{
         margin:3% 0 3% 0;
@@ -28,23 +28,20 @@
     }
     article{
         width:63%;
-        height:100%;
+        // height:100%;
         padding-left:4%;
-        padding-top:15%;
+        // padding-top:15%;
         border:3px solid green;
         .permBorderLeft{
             padding-left:5%;
-            padding-top:15%;
+            // padding-top:15%;
             border-left:7px solid $bTheB;
             border-bottom:7px solid $bTheB;
-            // padding-left:5%;
-            // border-left:5px solid $bTheB;
 
         }
     }
     .sideBlogPicture{
-        // position:absolute;
-        transform: scale(4.5) translatey(37%);
+        transform: scale(2.5) translatey(107%) translatex(26%);
         left:0%;
         width:35%;
     }
@@ -81,6 +78,28 @@
     .commentHorizontal{
         @include flexEnable(true, false, false, false);
     }
-    
+    .blogPhotoContainer{
+    // position:absolute;
+    // width:55%;
+    z-index:10;
+    font-size:0;
+    // max-width:100%;
+    // max-height:500px;
+    // bottom:-25%;
+    right:0%;
+    box-shadow:-40px 40px $bTheB;
+    transform: scale(1.2) translatey(-40%) translatex(12%);
+        // max-width:700px;
+    // max-height:auto;
+    // border-color:$bTheB;
+    // border-left:45px solid $bTheB;
+    // border-top:50px solid $bTheB;
+    // border-bottom:50px solid $bTheB;
+        // background-color:yellow;
+    img{
+        width:100%;
+        // max-width:800px;
+    }
+}
 
 }

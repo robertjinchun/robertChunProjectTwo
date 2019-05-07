@@ -794,7 +794,7 @@ footer p {
           justify-content: center;
   position: relative;
   border: 3px solid red;
-  width: 100vw;
+  width: 100%;
   height: 50vh;
   max-height: 600px;
   min-height: 500px;
@@ -859,8 +859,7 @@ footer p {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  width: 100vw;
-  height: 100%;
+  width: 100%;
   background-color: #effdf3;
 }
 
@@ -894,22 +893,19 @@ footer p {
 
 .blogMainContainer article {
   width: 63%;
-  height: 100%;
   padding-left: 4%;
-  padding-top: 15%;
   border: 3px solid green;
 }
 
 .blogMainContainer article .permBorderLeft {
   padding-left: 5%;
-  padding-top: 15%;
   border-left: 7px solid #fdfa69;
   border-bottom: 7px solid #fdfa69;
 }
 
 .blogMainContainer .sideBlogPicture {
-  -webkit-transform: scale(4.5) translatey(37%);
-          transform: scale(4.5) translatey(37%);
+  -webkit-transform: scale(2.5) translatey(107%) translatex(26%);
+          transform: scale(2.5) translatey(107%) translatex(26%);
   left: 0%;
   width: 35%;
 }
@@ -954,6 +950,20 @@ footer p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.blogMainContainer .blogPhotoContainer {
+  z-index: 10;
+  font-size: 0;
+  right: 0%;
+  -webkit-box-shadow: -40px 40px #fdfa69;
+          box-shadow: -40px 40px #fdfa69;
+  -webkit-transform: scale(1.2) translatey(-40%) translatex(12%);
+          transform: scale(1.2) translatey(-40%) translatex(12%);
+}
+
+.blogMainContainer .blogPhotoContainer img {
+  width: 100%;
 }
 
 .formHead {
@@ -1237,7 +1247,7 @@ footer p {
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1000px) {
   .blogHead .blogPhotoContainer {
     right: 25%;
   }
@@ -1246,9 +1256,9 @@ footer p {
   }
   .blogMainContainer {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1271,6 +1281,10 @@ footer p {
   .commentHeaderPic img {
     height: 100px;
     width: 100px;
+  }
+  .blogMainContainer .blogPhotoContainer {
+    -webkit-transform: scale(1.2) translatey(-40%) translatex(8%);
+            transform: scale(1.2) translatey(-40%) translatex(8%);
   }
 }
 
