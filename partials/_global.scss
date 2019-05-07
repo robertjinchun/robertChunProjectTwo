@@ -35,7 +35,7 @@ p, li{
 %fullBleedWrap{
     
     // border:3px solid purple;
-    width:100vw;
+    width:100%;
 }
 
 // Setting almost all fonts
@@ -111,7 +111,7 @@ $footColor: #2c2c2c;
 
 nav{
     // border:3px solid red;
-    margin-right:20%;
+    // margin-right:20%;
     // @extend .flexEnableLR;
     // justify-content:flex-end;
     ul{

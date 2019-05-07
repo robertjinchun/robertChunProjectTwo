@@ -216,7 +216,7 @@ h1, h2, h3, h4, span, label, nav li:nth-child(n+1):nth-child(-n+4), button, .lin
 }
 
 footer, .homeMain .bleed, .homeMain .secondHeader {
-  width: 100vw;
+  width: 100%;
 }
 
 h1 {
@@ -274,10 +274,6 @@ p {
 input {
   font-size: 1.1rem;
   font-family: 'Roboto', sans-serif;
-}
-
-nav {
-  margin-right: 20%;
 }
 
 nav li:nth-child(n+2):nth-child(-n+3) {
@@ -380,7 +376,7 @@ footer p {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 80vh;
   max-height: 800px;
   min-height: 600px;
@@ -426,6 +422,7 @@ nav ul {
 
 .photoContainer {
   position: absolute;
+  display: visible;
   width: 40%;
   z-index: -10;
   font-size: 0;
@@ -453,11 +450,7 @@ nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100vw;
-}
-
-.homeMain .absolute {
-  position: absolute;
+  width: 100%;
 }
 
 .homeMain .relative {
@@ -529,9 +522,11 @@ nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transform: scale(1) translatex(-13%) translatey(-15%);
+          transform: scale(1) translatex(-13%) translatey(-15%);
   top: -15%;
   left: 0;
-  width: 85%;
+  width: 100%;
   -webkit-box-shadow: 50px 40px #fdfa69;
           box-shadow: 50px 40px #fdfa69;
 }
@@ -540,11 +535,13 @@ nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transform: scale(1) translatex(13%) translatey(15%);
+          transform: scale(1) translatex(13%) translatey(15%);
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   top: 15%;
-  width: 85%;
+  width: 90%;
   right: 0;
   -webkit-box-shadow: -50px 40px #fdfa69;
           box-shadow: -50px 40px #fdfa69;
@@ -603,6 +600,7 @@ nav ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
   margin: 1% 7% 1% 7%;
 }
 
@@ -620,6 +618,10 @@ nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
 }
 
 .homeMain .sideSide {
@@ -663,8 +665,7 @@ nav ul {
       -ms-flex-pack: center;
           justify-content: center;
   height: 50vh;
-  max-height: 500px;
-  position: relative;
+  width: 100%;
 }
 
 .homeMain .singleBlog {
@@ -676,6 +677,7 @@ nav ul {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #effdf3;
+  width: 100%;
 }
 
 .homeMain .singleBlog .gridSingleBlog {
@@ -770,6 +772,10 @@ nav ul {
 
 .homeMain .galleryContainer img {
   width: 90%;
+}
+
+.homeMain .extend {
+  width: 100%;
 }
 
 footer {
@@ -1137,6 +1143,9 @@ footer p {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .gridSec {
     width: 100%;
@@ -1150,8 +1159,9 @@ footer p {
   .homeMain .absolute {
     position: static;
   }
-  .firstPic, .secondPic {
-    min-width: 600px;
+  .homeMain .secondPic {
+    -webkit-transform: scale(1) translatex(13%) translatey(0%);
+            transform: scale(1) translatex(13%) translatey(0%);
   }
   .gridFlip {
     -webkit-box-orient: vertical;
@@ -1171,10 +1181,20 @@ footer p {
 }
 
 @media (max-width: 900px) {
-  .singleBlog {
+  .homeMain .gridSec {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     width: 100%;
   }
-  .singleBlog .gridSingleBlog {
+  .homeMain .gridSec aside, .homeMain .gridSec article {
+    margin: 30px 0 30px 0;
+    width: 100%;
+  }
+  .homeMain .singleBlog {
+    width: 100%;
+  }
+  .homeMain .singleBlog .gridSingleBlog {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1187,7 +1207,7 @@ footer p {
             align-items: center;
     width: 100%;
   }
-  .singleBlog .gridSingleBlog article {
+  .homeMain .singleBlog .gridSingleBlog article {
     width: 100%;
     margin-top: 5%;
     display: -webkit-box;
@@ -1201,19 +1221,69 @@ footer p {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .singleBlog .gridSingleBlog aside {
-    width: 100%;
+  .homeMain .singleBlog .gridSingleBlog aside {
+    width: 25%;
+    display: none;
   }
-  .singleBlog .gridSingleBlog aside div {
+  .homeMain .singleBlog .gridSingleBlog aside div {
     width: 100%;
     font-size: 0;
     -webkit-box-shadow: 50px 40px #fdfa69;
             box-shadow: 50px 40px #fdfa69;
   }
-  .singleBlog .buttonArea {
+  .homeMain .singleBlog .buttonArea {
     margin: 5% 0 3% 0;
     text-align: center;
-    width: 300px;
+    width: 100%;
+  }
+  .homeMain .gallery {
+    padding: 7% 0 7% 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .homeMain .galleryContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 85%;
+  }
+  .homeMain .galleryContainer div {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 3% 0 3% 0;
+  }
+  .homeMain .galleryContainer img {
+    width: 100%;
   }
 }
 
@@ -1309,8 +1379,16 @@ footer p {
 }
 
 @media (max-width: 675px) {
-  nav {
-    margin-right: 20%;
+  .photoContainer {
+    bottom: 20%;
+  }
+  .ultimateWrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .ultimateWrapper h1 {
+    font-size: 2.5rem;
   }
   nav li:nth-child(n+1):nth-child(-n+4) {
     display: none;
