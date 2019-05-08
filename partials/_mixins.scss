@@ -7,17 +7,20 @@
     background-image:$backPic;
 }
 //crazy mixin I created for flexbox
-@mixin flexEnable($lR:true, $uD:false, $centerLR:false, $centerUD:false){
-    @if $lR{
-        display:flex;
+@mixin flexEnable($lR:true, $uD:false, $centerLR:false, $centerUD:false) {
+    @if $lR {
+        display: flex;
     }
-    @if $uD{
-        flex-direction:column;
+
+    @if $uD {
+        flex-direction: column;
     }
-    @if $centerLR{
-        justify-content:center;
+
+    @if $centerLR {
+        justify-content: center;
     }
-    @if $centerUD{
-        align-items:center;
+
+    @if $centerUD {
+        align-items: center;
     }
 }

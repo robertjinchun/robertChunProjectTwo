@@ -1,210 +1,251 @@
 //MediaQueries for Header
 
 @media (max-width: 1600px) {
-    .photoContainer{
-        width:600px;
+    .photoContainer {
+        width: 600px;
     }
 }
+
 //changes the wrapper of the header
 @media (max-width: 1200px) {
-    .ultimateWrapper{
-        justify-content:flex-start;
-        align-items:flex-end;
-    }
-    h1{
-        font-size:5rem;
-     }
-    nav{
-        margin-right:0%;
-    }
-    .photoContainer{
-        width:50%;
-        min-width:450px;
-        bottom:0%;
-    }
-}
-//changes the direction of flex for the 2X2 grid
-@media (max-width: 1100px) {
-    .gridSec{
-        justify-content:center;
-        flex-direction:column;
-        width:100%;
-        align-items: center;
-    }
-    .gridSec{
-        width:100%;
-        aside, article{
-            width:20%;
-        }
-    }
-    .homeMain{
-        .absolute{
-            position:static;
-    }
-    .secondPic{
-        transform: translatex(13%) translatey(0%);
-        width:85%;
+    .ultimateWrapper {
+        justify-content: flex-start;
+        align-items: flex-end;
     }
 
+    h1 {
+        font-size: 5rem;
+    }
+
+    nav {
+        margin-right: 0%;
+    }
+
+    .photoContainer {
+        width: 50%;
+        min-width: 450px;
+        bottom: 0%;
+    }
 }
-    .gridFlip{
-        flex-direction:column-reverse;
+
+//changes the direction of flex for the 2X2 grid
+@media (max-width: 1100px) {
+    .gridSec {
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
     }
-    article{
-        width:100%;
-    }
-    .gridSingleBlog{
-        article{
-            width:100%;
+
+    .gridSec {
+        width: 100%;
+
+        aside,
+        article {
+            width: 20%;
         }
-        aside{
-            width:1005%;
+    }
+
+    .homeMain {
+        .absolute {
+            position: static;
+        }
+
+        .secondPic {
+            transform: translatex(13%) translatey(0%);
+            width: 85%;
+        }
+
+    }
+
+    .gridFlip {
+        flex-direction: column-reverse;
+    }
+
+    article {
+        width: 100%;
+    }
+
+    .gridSingleBlog {
+        article {
+            width: 100%;
+        }
+
+        aside {
+            width: 1005%;
         }
     }
+
     //**********************Form page
-    .formHead{
-        .formContainer{
-            right:0%;
-            top:50%;
+    .formHead {
+        .formContainer {
+            right: 0%;
+            top: 50%;
             width: 100%;
         }
     }
-    .formMain{
-        padding-top:35%;
+
+    .formMain {
+        padding-top: 35%;
     }
-    .formMainContainer{
-        justify-content:flex-start;
-        aside{
-            width:75%;
+
+    .formMainContainer {
+        justify-content: flex-start;
+
+        aside {
+            width: 75%;
         }
     }
-} 
+}
 
 //Media Queries for Blog
 //break point for 1000px
-@media(max-width:1000px){
-    .blogHead{
-        .blogPhotoContainer{
-            right:25%;
-            img{
-            min-width:300px;
+@media(max-width:1000px) {
+    .blogHead {
+        .blogPhotoContainer {
+            right: 25%;
+
+            img {
+                min-width: 300px;
             }
         }
     }
-    
-    .blogMainContainer{
-        flex-direction:column-reverse;
-        align-items:center;
-        width:100%;
-        .sideBlogContent{
+
+    .blogMainContainer {
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+
+        .sideBlogContent {
             padding: 10% 0 10% 0;
-    }
-        article{
+        }
+
+        article {
             // width:90%;
-            margin-right:0%;
-            padding-top:0%;
+            margin-right: 0%;
+            padding-top: 0%;
 
         }
-        aside{
-            width:90%;
+
+        aside {
+            width: 90%;
         }
     }
-    .sideBlogPicture{
-        display:none;
+
+    .sideBlogPicture {
+        display: none;
     }
-    .commentHeaderPic{
+
+    .commentHeaderPic {
         width: 100%;
-        img{
-            height:30px;
-            width:30px;
+
+        img {
+            height: 30px;
+            width: 30px;
         }
     }
-    .blogMainContainer{
-        .blogPhotoContainer{
+
+    .blogMainContainer {
+        .blogPhotoContainer {
             transform: scale(1.2) translatey(-40%) translatex(8%);
         }
     }
 }
+
 // breakpoint at 900px
 @media (max-width: 900px) {
 
-//************************************Blog Section
-.homeMain{
-    .gridSec{
-        @include flexEnable(true, false, false, false);
-        width:100%;
-        aside, article{
-            margin:30px 0 30px 0;
-            width:100%;
-        }
-    }
-    .singleBlog{
-        width:100%;
-        //SORRY!!!! i had to do this
-        .gridSingleBlog{
-            @include flexEnable(true, true, false, true);
-            width:100%;
-            article{
-                width:100%;
-                margin-top:5%;
-                @include flexEnable(true, true, true, false);
+    //************************************Blog Section
+    .homeMain {
+        .gridSec {
+            @include flexEnable(true, false, false, false);
+            width: 100%;
+
+            aside,
+            article {
+                margin: 30px 0 30px 0;
+                width: 100%;
             }
-            aside{
-                width:25%;
-                display:none;
-                div{
-                    width:100%;
-                    font-size:0;
-                    box-shadow: 50px 40px $bTheB;
+        }
+
+        .singleBlog {
+            width: 100%;
+
+            //SORRY!!!! i had to do this
+            .gridSingleBlog {
+                @include flexEnable(true, true, false, true);
+                width: 100%;
+
+                article {
+                    width: 100%;
+                    margin-top: 5%;
+                    @include flexEnable(true, true, true, false);
+                }
+
+                aside {
+                    width: 25%;
+                    display: none;
+
+                    div {
+                        width: 100%;
+                        font-size: 0;
+                        box-shadow: 50px 40px $bTheB;
+                    }
                 }
             }
+
+            .buttonArea {
+                margin: 5% 0 3% 0;
+                text-align: center;
+                width: 100%;
+            }
         }
-        .buttonArea{
-            margin:5% 0 3% 0;
-            text-align:center;
-            width:100%;
+
+        .gallery {
+            padding: 7% 0 7% 0;
+            @include flexEnable(true, false, true, false);
+            width: 100%;
         }
-    }
-    .gallery{
-        padding:7% 0 7% 0;
-        @include flexEnable(true, false, true, false);
-        width:100%;
-    }
-    .galleryContainer{
-        @include flexEnable(true, true, true, true);
-        justify-content:space-between;
-        width:85%;
-        div{
-            width:90%;
+
+        .galleryContainer {
             @include flexEnable(true, true, true, true);
-            margin:3% 0 3% 0;
-        }
-        img{
-            width:100%;
+            justify-content: space-between;
+            width: 85%;
+
+            div {
+                width: 90%;
+                @include flexEnable(true, true, true, true);
+                margin: 3% 0 3% 0;
+            }
+
+            img {
+                width: 100%;
+            }
         }
     }
-}
-    .quickContentRow{
-        flex-direction:column;
+
+    .quickContentRow {
+        flex-direction: column;
     }
-    .sideSide{
-        margin:5% 0 5% 0;
+
+    .sideSide {
+        margin: 5% 0 5% 0;
     }
 
 
     //***********************Form section
-    .formMain{
-    padding-top:50%;
+    .formMain {
+        padding-top: 50%;
     }
 
 }
 
 //breakpoint at 750
-@media(max-width:750){
-    .homeMain{
-        .galleryContainer{
-        display: flex;
-        flex-direction: column;
+@media(max-width:750) {
+    .homeMain {
+        .galleryContainer {
+            display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
         }
@@ -212,69 +253,82 @@
 }
 
 //breakpoint for 710 mostly for form
-@media(max-width:710px){
-    .photoContainer{
+@media(max-width:710px) {
+    .photoContainer {
         // display:none;
-        bottom:20%;
+        bottom: 20%;
     }
-    .formMain{
-        padding-top:70%;
+
+    .formMain {
+        padding-top: 70%;
     }
-    .ultimateWrapper{
-        justify-content:space-between;
-        h1{
-        font-size:2.5rem;
+
+    .ultimateWrapper {
+        justify-content: space-between;
+
+        h1 {
+            font-size: 2.5rem;
         }
     }
-    nav{
+
+    nav {
+
         // margin-right:20%;
-    li:nth-child(n+1):nth-child(-n+4){
-    display:none;
+        li:nth-child(n+1):nth-child(-n+4) {
+            display: none;
+        }
+
+        li:nth-child(5) {
+            display: inline-block;
+
+            i {
+                font-size: 30px;
+            }
+        }
     }
-    li:nth-child(5){
-    display:inline-block;
-    
-    i{
-        font-size:30px;
+
+    .commentHorizontalCenter {
+        display: flex;
+        flex-direction: column;
+
+        input {
+            width: 100%;
+        }
     }
-    }
-}
-.commentHorizontalCenter{
-    display:flex;
-    flex-direction:column;
-    input{
-        width:100%;
-    }
-}
-    .formTitle{
-        h2{
-            font-size:2rem;
+
+    .formTitle {
+        h2 {
+            font-size: 2rem;
             margin: 1% 0 0 0%;
-        }   
+        }
     }
 }
+
 //Break point at 650, mostly for form
-@media(max-width:650px){
-    .formMain{
-    padding-top:80%;
+@media(max-width:650px) {
+    .formMain {
+        padding-top: 80%;
     }
-        
+
+}
+
+@media(max-width:420px) {
+    .formMain {
+        padding-top: 110%;
     }
-    @media(max-width:420px){
-    .formMain{
-    padding-top:110%;
+
+}
+
+@media(max-width:650px) {
+    .formMain {
+        padding-top: 80%;
     }
-        
+
+}
+
+@media(max-width:485px) {
+    .formMain {
+        padding-top: 130%;
     }
-    @media(max-width:650px){
-    .formMain{
-    padding-top:80%;
-    }
-        
-    }
-    @media(max-width:485px){
-    .formMain{
-    padding-top:130%;
-    }
-        
+
 }

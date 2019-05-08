@@ -1,41 +1,50 @@
 //main section for form
-.formMain{
+.formMain {
     @include flexEnable(true, false, true, false);
-    position:relative;
-    width:100%;
-    padding-bottom:10%;
-    background-color:$primary;
+    position: relative;
+    width: 100%;
+    padding-bottom: 10%;
+    background-color: $primary;
 }
+
 //alignment and wrapper kind of like form
-.formMainContainer{
+.formMainContainer {
     @include flexEnable(true, false, true, false);
-    width:90%;
-    aside{
-        width:100%;
-        img{
-            width:100%;
+    width: 90%;
+
+    aside {
+        width: 100%;
+
+        img {
+            width: 100%;
         }
     }
-    article{
-        width:63%;
-        height:100%;
-    } 
-    h4{
-        margin:2% 0 2% 0;
+
+    article {
+        width: 63%;
+        height: 100%;
     }
-    p{
-        margin:1% 0 1% 0;
+
+    h4 {
+        margin: 2% 0 2% 0;
+    }
+
+    p {
+        margin: 1% 0 1% 0;
     }
 }
+
 //icon container
-.iconContainer{
-    display:flex;
-    margin:5% 0 5% 0;
+.iconContainer {
+    display: flex;
+    margin: 5% 0 5% 0;
 }
+
 //icon specific
-.formIcons{
+.formIcons {
     @include flexEnable(true, false, false, false);
-    li{
-        margin-right:20%;
+
+    li {
+        margin-right: 20%;
     }
 }

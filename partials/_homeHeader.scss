@@ -1,49 +1,57 @@
 //**********The CSS fofor the home header page
-.homeHeader, .ultimateWrapper, nav{
-@extend %fullBleedWrap;
+.homeHeader,
+.ultimateWrapper,
+nav {
+    @extend %fullBleedWrap;
 }
-.homeHeader{
+
+.homeHeader {
     @include backgroundSet(url("../assets/headerImage.jpg"));
     @extend %backKeep;
     @include flexEnable(true, false, true, false);
-    position:relative;
-    height:80vh;
-    max-height:800px;
-    min-height:600px;
+    position: relative;
+    height: 80vh;
+    max-height: 800px;
+    min-height: 600px;
 }
+
 //what more can I say? the ultimate wrapper?
-.ultimateWrapper{
-    z-index:0;
-    max-width:1600px;
-    min-height:600px;
-    height:100%;
+.ultimateWrapper {
+    z-index: 0;
+    max-width: 1600px;
+    min-height: 600px;
+    height: 100%;
     @include flexEnable(true, true, false, true);
-    justify-content:space-between;
+    justify-content: space-between;
 }
+
 //Custom Nav for Home Page
-nav{
+nav {
     @include flexEnable(true);
-    justify-content:flex-end;
-    margin-top:2%;
-    ul{
+    justify-content: flex-end;
+    margin-top: 2%;
+
+    ul {
         @include flexEnable();
     }
 }
+
 // Crazy hard to place floating picture
-.photoContainer{
-    position:absolute;
-    display:visible;
-    width:40%;
-    z-index:-10;
-    font-size:0;
-    bottom:-25%;
-    right:0;
-    max-height:auto;
-    border-color:$bTheB;
-    border-left:45px solid $bTheB;
-    border-top:50px solid $bTheB;
-    border-bottom:50px solid $bTheB;
-    img{
-        width:100%;
+.photoContainer {
+    position: absolute;
+    display: visible;
+    width: 40%;
+    z-index: -10;
+    font-size: 0;
+    bottom: -25%;
+    right: 0;
+    max-height: auto;
+    border-color: $bTheB;
+    border-left: 45px solid $bTheB;
+    border-top: 50px solid $bTheB;
+    border-bottom: 50px solid $bTheB;
+
+    img {
+        width: 100%;
     }
 }

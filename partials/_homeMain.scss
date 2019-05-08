@@ -1,174 +1,219 @@
 //basically width 100%;
-.homeMain, .bleed, .gridSec, .firstPic, .secondPic, .quickContentRow, .quickContentRowTwo, .secondHeader, .singleBlog, .gallery, .extend{
+.homeMain,
+.bleed,
+.gridSec,
+.firstPic,
+.secondPic,
+.quickContentRow,
+.quickContentRowTwo,
+.secondHeader,
+.singleBlog,
+.gallery,
+.extend {
     @extend %fullBleedWrap;
 }
+
 //
-.homeMain{
+.homeMain {
     @include flexEnable(true, true, false, true);
-    .relative{
-        position:relative;
+
+    .relative {
+        position: relative;
     }
-    .bleed{
-        background-color:$primary;
+
+    .bleed {
+        background-color: $primary;
         @include flexEnable(true, true, true, true);
     }
+
     //what is captured section
-    .whatIsCap{
+    .whatIsCap {
         @include flexEnable(true, true, true, true);
-        text-align:center;
-        max-width:1300px;
-        min-height:300px;
-        margin:200px 0 200px 0;
-        .buttonArea{
-            text-align:center;
-            margin:5% 0 3% 0;
+        text-align: center;
+        max-width: 1300px;
+        min-height: 300px;
+        margin: 200px 0 200px 0;
+
+        .buttonArea {
+            text-align: center;
+            margin: 5% 0 3% 0;
         }
     }
+
     //grid section
-    .gridSec{
+    .gridSec {
         @include flexEnable(true, false, false, false);
-        aside, article{
-            width:50%;
+
+        aside,
+        article {
+            width: 50%;
         }
     }
-    img{
-        width:100%
+
+    img {
+        width: 100%
     }
+
     //ghost space removing class
-    .gridPics{
-        font-size:0;
+    .gridPics {
+        font-size: 0;
     }
+
     //first picture settings
-    .firstPic{
+    .firstPic {
         @include flexEnable (true);
         transform: scale(0.795) translatex(-13%) translatey(-15%);
-        width:100%;
-        top:-15%;
-        left:0;
+        width: 100%;
+        top: -15%;
+        left: 0;
         box-shadow: 50px 40px $bTheB;
     }
+
     //second picture settings
-    .secondPic{
+    .secondPic {
         @include flexEnable (true);
         transform: scale(0.795) translatex(13%) translatey(15%);
-        justify-content:flex-end;
-        width:100%;
-        top:15%;
-        right:0;
+        justify-content: flex-end;
+        width: 100%;
+        top: 15%;
+        right: 0;
         box-shadow: -50px 40px $bTheB;
     }
-    .textRight{
-        margin-left:15%;
+
+    .textRight {
+        margin-left: 15%;
     }
-    .textLeft{
-        margin-right:15%;
+
+    .textLeft {
+        margin-right: 15%;
         align-items: flex-end;
-        text-align:right;
+        text-align: right;
     }
-    .topArticleText{
+
+    .topArticleText {
         @include flexEnable(true, true);
     }
-    .oneByTwo{
+
+    .oneByTwo {
         @include flexEnable(true, true, true, false);
         // border:3px solid red;
-        padding:6% 0 2% 0;
-        .buttonArea{
-            text-align:center;
-            margin:5% 0 3% 0;
-            width:200px;
+        padding: 6% 0 2% 0;
+
+        .buttonArea {
+            text-align: center;
+            margin: 5% 0 3% 0;
+            width: 200px;
         }
     }
+
     //Mid content section
-    .midContentTwo{
-        padding:15% 0 15% 0;
+    .midContentTwo {
+        padding: 15% 0 15% 0;
     }
-    .quickContentRow{
+
+    .quickContentRow {
         @include flexEnable(true, false, true, false);
-        margin:1% 7% 1% 7%;
-        .quickInner{
+        margin: 1% 7% 1% 7%;
+
+        .quickInner {
             @include flexEnable(true, true);
         }
     }
-    .quickContentRowTwo{
+
+    .quickContentRowTwo {
         @include flexEnable(true, false, true false);
     }
-    .sideSide{
+
+    .sideSide {
         @include flexEnable(true);
     }
+
     //icon styling
-    .iconContent{
-        width:50px;
-        height:50px;
-        margin-right:20px;
-        background-color:$tertiary;
-        border-radius:50%;
-        i{
-            width:50px;
-            height:50px;
+    .iconContent {
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+        background-color: $tertiary;
+        border-radius: 50%;
+
+        i {
+            width: 50px;
+            height: 50px;
             @include flexEnable(true, true, true, true);
         }
     }
+
     //second header section ion the middle of the page
-    .secondHeader{
-    @include backgroundSet(url("../assets/banner.jpg"));
-    @extend %backKeep;
-    @include flexEnable(true, false, true, false);
-    @extend %fullBleedWrap;
-    height:50vh;
+    .secondHeader {
+        @include backgroundSet(url("../assets/banner.jpg"));
+        @extend %backKeep;
+        @include flexEnable(true, false, true, false);
+        @extend %fullBleedWrap;
+        height: 50vh;
     }
+
     //single blog settings
-    .singleBlog{
-        padding:7% 0 7% 0;
+    .singleBlog {
+        padding: 7% 0 7% 0;
         @include flexEnable(true, false, true, false);
-        background-color:$primary;
-        width:100%;
+        background-color: $primary;
+        width: 100%;
     }
-    .gridSingleBlog{
+
+    .gridSingleBlog {
         @include flexEnable(true, false, true, false);
-        width:85%;
-        article{
-            width:70%;
-            margin-left:5%;
+        width: 85%;
+
+        article {
+            width: 70%;
+            margin-left: 5%;
             @include flexEnable(true, true, true, false);
         }
-        aside{
-            width:30%;
-            margin-right:5%;
+
+        aside {
+            width: 30%;
+            margin-right: 5%;
             @include flexEnable(true, true, true, true);
-            div{
-                width:100%;
-                font-size:0;
+
+            div {
+                width: 100%;
+                font-size: 0;
                 box-shadow: 50px 40px $bTheB;
             }
         }
     }
-    .buttonArea{
-        margin:5% 0 3% 0;
-        text-align:center;
-        width:300px;
+
+    .buttonArea {
+        margin: 5% 0 3% 0;
+        text-align: center;
+        width: 300px;
     }
-    .gallery{
-        padding:7% 0 7% 0;
+
+    .gallery {
+        padding: 7% 0 7% 0;
         @include flexEnable(true, false, true, false);
         //width:100%;
         // background-color:$primary;
     }
-    .galleryContainer{
+
+    .galleryContainer {
         @include flexEnable(true, false, true, false);
-        justify-content:space-between;
+        justify-content: space-between;
         // border:3px solid green;
-        width:85%;
-        div{
-            width:33.3%;
+        width: 85%;
+
+        div {
+            width: 33.3%;
             @include flexEnable(true, false, true, false);
         }
-        img{
-            width:90%;
+
+        img {
+            width: 90%;
             // border:3px solid red;
         }
     }
-    
-    .extend{
-        background-color:$secondary;
+
+    .extend {
+        background-color: $secondary;
     }
 }
