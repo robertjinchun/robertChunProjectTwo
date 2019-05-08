@@ -41,7 +41,8 @@
     //first picture settings
     .firstPic{
         @include flexEnable (true);
-        transform: scale(1) translatex(-13%) translatey(-15%);
+        transform: scale(0.795) translatex(-13%) translatey(-15%);
+        width:100%;
         top:-15%;
         left:0;
         box-shadow: 50px 40px $bTheB;
@@ -49,8 +50,9 @@
     //second picture settings
     .secondPic{
         @include flexEnable (true);
-        transform: scale(1) translatex(13%) translatey(15%);
+        transform: scale(0.795) translatex(13%) translatey(15%);
         justify-content:flex-end;
+        width:100%;
         top:15%;
         right:0;
         box-shadow: -50px 40px $bTheB;

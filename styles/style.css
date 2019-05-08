@@ -520,8 +520,9 @@ nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transform: scale(1) translatex(-13%) translatey(-15%);
-          transform: scale(1) translatex(-13%) translatey(-15%);
+  -webkit-transform: scale(0.795) translatex(-13%) translatey(-15%);
+          transform: scale(0.795) translatex(-13%) translatey(-15%);
+  width: 100%;
   top: -15%;
   left: 0;
   -webkit-box-shadow: 50px 40px #fdfa69;
@@ -532,11 +533,12 @@ nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transform: scale(1) translatex(13%) translatey(15%);
-          transform: scale(1) translatex(13%) translatey(15%);
+  -webkit-transform: scale(0.795) translatex(13%) translatey(15%);
+          transform: scale(0.795) translatex(13%) translatey(15%);
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  width: 100%;
   top: 15%;
   right: 0;
   -webkit-box-shadow: -50px 40px #fdfa69;
@@ -1113,14 +1115,15 @@ nav ul {
     width: 100%;
   }
   .gridSec aside, .gridSec article {
-    width: 100%;
+    width: 20%;
   }
   .homeMain .absolute {
     position: static;
   }
   .homeMain .secondPic {
-    -webkit-transform: scale(1) translatex(13%) translatey(0%);
-            transform: scale(1) translatex(13%) translatey(0%);
+    -webkit-transform: translatex(13%) translatey(0%);
+            transform: translatex(13%) translatey(0%);
+    width: 85%;
   }
   .gridFlip {
     -webkit-box-orient: vertical;

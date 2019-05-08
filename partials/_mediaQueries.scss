@@ -34,7 +34,7 @@
     .gridSec{
         width:100%;
         aside, article{
-            width:100%;
+            width:20%;
         }
     }
     .homeMain{
@@ -42,7 +42,8 @@
             position:static;
     }
     .secondPic{
-        transform: scale(1) translatex(13%) translatey(0%);
+        transform: translatex(13%) translatey(0%);
+        width:85%;
     }
 
 }
