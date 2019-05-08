@@ -180,7 +180,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 html {
-  font-size: 20px;
+  font-size: 125%;
 }
 
 a, li, ul, h1, h2, h3, h4, header, body, footer, p, li {
