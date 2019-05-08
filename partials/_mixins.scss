@@ -1,10 +1,12 @@
-
+//Mixin for font sizes
 @mixin fontSet($fSize){
     font-size:$fSize;
 }
+//mixin for background color
 @mixin backgroundSet($backPic){
     background-image:$backPic;
 }
+//crazy mixin I created for flexbox
 @mixin flexEnable($lR:true, $uD:false, $centerLR:false, $centerUD:false){
     @if $lR{
         display:flex;

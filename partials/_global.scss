@@ -69,9 +69,9 @@ nav{
     li:nth-child(n+1):nth-child(-n+4){
     @include fontSet(1.3rem);
     @extend %fontKeep;
-            @include flexEnable(true);
-        justify-content:flex-end;
-        margin-top:2%;
+    @include flexEnable(true);
+    justify-content:flex-end;
+    margin-top:2%;
     line-height:29px;
     display:inline-block;
     }
