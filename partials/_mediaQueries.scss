@@ -3,19 +3,15 @@
 @media (max-width: 1600px) {
     .photoContainer{
         width:600px;
-        // bottom:0%;
-        // img{
-        //     transform:rotate(-90deg);
-        // }
     }
 }
+//changes the wrapper of the header
 @media (max-width: 1200px) {
     .ultimateWrapper{
         justify-content:flex-start;
         align-items:flex-end;
     }
     h1{
-        //margin-top:5%;
         font-size:5rem;
      }
     nav{
@@ -25,43 +21,31 @@
         width:50%;
         min-width:450px;
         bottom:0%;
-        // img{
-        //     transform:rotate(-90deg);
-        // }
     }
 }
+//changes the direction of flex for the 2X2 grid
 @media (max-width: 1100px) {
-
     .gridSec{
         justify-content:center;
         flex-direction:column;
         width:100%;
         align-items: center;
-
     }
     .gridSec{
-        // @include flexEnable(true, false, false, false);
-        // border:3px solid green;
         width:100%;
         aside, article{
             width:100%;
         }
     }
-    // img{
-        // object-fit:contain;
-        // width:100%
-    // }
     .homeMain{
         .absolute{
             position:static;
     }
     .secondPic{
         transform: scale(1) translatex(13%) translatey(0%);
-        // min-width:400px;
     }
-    }
-    
-    
+
+}
     .gridFlip{
         flex-direction:column-reverse;
     }
@@ -75,165 +59,8 @@
         aside{
             width:1005%;
         }
-
     }
-
-}
-
-@media (max-width: 900px) {
-.homeMain{
-    .gridSec{
-        @include flexEnable(true, false, false, false);
-        // border:3px solid green;
-        width:100%;
-        aside, article{
-            margin:30px 0 30px 0;
-            width:100%;
-        }
-    }
-    .singleBlog{
-        width:100%;
-
-        .gridSingleBlog{
-            @include flexEnable(true, true, false, true);
-            // border:3px solid green;
-            width:100%;
-            // article, aside{
-            //     width:50%;
-            // }
-            // aside, article{
-            // width:100%;
-        
-            article{
-                width:100%;
-                // border:3px solid blue;
-                margin-top:5%;
-                @include flexEnable(true, true, true, false);
-            }
-            aside{
-                width:25%;
-                display:none;
-                // border:3px solid blue;
-                // margin-right:5%;
-                // @include flexEnable(true, true, true, true);
-                div{
-                    width:100%;
-                    font-size:0;
-                    box-shadow: 50px 40px $bTheB;
-                }
-                // div{
-                //     width:100px;
-                // }
-            }
-        }
-        .buttonArea{
-            margin:5% 0 3% 0;
-            text-align:center;
-            width:100%;
-        }
-    }
-    .gallery{
-        padding:7% 0 7% 0;
-        @include flexEnable(true, false, true, false);
-        width:100%;
-        // background-color:$primary;
-        
-    }
-    .galleryContainer{
-        @include flexEnable(true, true, true, true);
-        justify-content:space-between;
-        // border:3px solid green;
-        width:85%;
-        div{
-            width:90%;
-            @include flexEnable(true, true, true, true);
-            margin:3% 0 3% 0;
-        }
-        img{
-            width:100%;
-            // border:3px solid red;
-        }
-    }
-}
-}
-
-@media (max-width: 900px) {
-    .quickContentRow{
-        flex-direction:column;
-    }
-    .sideSide{
-        margin:5% 0 5% 0;
-    }
-}
-@media(max-width:750){
-    .homeMain{
-
-        .galleryContainer{
-        // padding:7% 0 7% 0;
-        // @include flexEnable(true, true, false, true);
-        display: flex;
-        flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
-
-        // width:100%;
-        // background-color:$primary;
-        
-        }
-    }
-}
-
-//Media Queries for Blog
-
-@media(max-width:1000px){
-    .blogHead{
-    .blogPhotoContainer{
-        right:25%;
-        img{
-        min-width:300px;
-        }
-    }
-    }
-    
-    .blogMainContainer{
-        flex-direction:column-reverse;
-        align-items:center;
-        width:100%;
-        .sideBlogContent{
-            padding: 10% 0 10% 0;
-    }
-        article{
-            width:100%;
-            margin-right:5%;
-            padding-top:0%;
-
-        }
-        aside{
-            width:85%;
-        }
-    }
-    .sideBlogPicture{
-        display:none;
-    }
-    .commentHeaderPic{
-        width: 100%;
-        img{
-            height:100px;
-            width:100px;
-        }
-    }
-    .blogMainContainer{
-        .blogPhotoContainer{
-            transform: scale(1.2) translatey(-40%) translatex(8%);
-        }
-    }
-}
-
-//Media Queries for Form
-
-@media(max-width:1100px){
-
+    //**********************Form page
     .formHead{
         .formContainer{
             right:0%;
@@ -246,27 +73,148 @@
     }
     .formMainContainer{
         justify-content:flex-start;
-    article{
-        // width:100%;
-        // height:100%;
-    } 
-    aside{
-        width:75%;
+        aside{
+            width:75%;
+        }
+    }
+} 
+
+//Media Queries for Blog
+//break point for 1000px
+@media(max-width:1000px){
+    .blogHead{
+        .blogPhotoContainer{
+            right:25%;
+            img{
+            min-width:300px;
+            }
+        }
+    }
+    
+    .blogMainContainer{
+        flex-direction:column-reverse;
+        align-items:center;
+        width:100%;
+        .sideBlogContent{
+            padding: 10% 0 10% 0;
+    }
+        article{
+            // width:90%;
+            margin-right:0%;
+            padding-top:0%;
+
+        }
+        aside{
+            width:90%;
+        }
+    }
+    .sideBlogPicture{
+        display:none;
+    }
+    .commentHeaderPic{
+        width: 100%;
+        img{
+            height:30px;
+            width:30px;
+        }
+    }
+    .blogMainContainer{
+        .blogPhotoContainer{
+            transform: scale(1.2) translatey(-40%) translatex(8%);
+        }
     }
 }
+// breakpoint at 900px
+@media (max-width: 900px) {
+
+//************************************Blog Section
+.homeMain{
+    .gridSec{
+        @include flexEnable(true, false, false, false);
+        width:100%;
+        aside, article{
+            margin:30px 0 30px 0;
+            width:100%;
+        }
+    }
+    .singleBlog{
+        width:100%;
+        //SORRY!!!! i had to do this
+        .gridSingleBlog{
+            @include flexEnable(true, true, false, true);
+            width:100%;
+            article{
+                width:100%;
+                margin-top:5%;
+                @include flexEnable(true, true, true, false);
+            }
+            aside{
+                width:25%;
+                display:none;
+                div{
+                    width:100%;
+                    font-size:0;
+                    box-shadow: 50px 40px $bTheB;
+                }
+            }
+        }
+        .buttonArea{
+            margin:5% 0 3% 0;
+            text-align:center;
+            width:100%;
+        }
+    }
+    .gallery{
+        padding:7% 0 7% 0;
+        @include flexEnable(true, false, true, false);
+        width:100%;
+    }
+    .galleryContainer{
+        @include flexEnable(true, true, true, true);
+        justify-content:space-between;
+        width:85%;
+        div{
+            width:90%;
+            @include flexEnable(true, true, true, true);
+            margin:3% 0 3% 0;
+        }
+        img{
+            width:100%;
+        }
+    }
+}
+    .quickContentRow{
+        flex-direction:column;
+    }
+    .sideSide{
+        margin:5% 0 5% 0;
     }
 
-@media(max-width:900px){
+
+    //***********************Form section
     .formMain{
     padding-top:50%;
     }
+
 }
 
+//breakpoint at 750
+@media(max-width:750){
+    .homeMain{
+        .galleryContainer{
+        display: flex;
+        flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+//breakpoint for 710 mostly for form
 @media(max-width:710px){
     .photoContainer{
         // display:none;
         bottom:20%;
-        
     }
     .formMain{
         padding-top:70%;
@@ -303,8 +251,8 @@
             margin: 1% 0 0 0%;
         }   
     }
-
 }
+//Break point at 650, mostly for form
 @media(max-width:650px){
     .formMain{
     padding-top:80%;
