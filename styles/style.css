@@ -342,7 +342,6 @@ nav li:nth-child(n+2):nth-child(-n+3) {
 form {
   background-color: white;
   width: 100%;
-  height: 500px;
 }
 
 .formButton {
@@ -357,6 +356,7 @@ form {
 
 footer {
   background-color: #2c2c2c;
+  padding: 1% 0 1% 0;
 }
 
 footer section {
@@ -799,11 +799,10 @@ footer p {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  border: 3px solid red;
   width: 100%;
   height: 50vh;
-  max-height: 600px;
-  min-height: 500px;
+  max-height: 800px;
+  min-height: 600px;
 }
 
 .blogHead .blogHeadAlign {
@@ -819,11 +818,10 @@ footer p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 3px solid orange;
 }
 
 .blogHead .blogHeadAlign .blogTitle {
-  margin-top: 10%;
+  margin-top: 10vh;
 }
 
 .blogHead .blogPhotoContainer {
@@ -857,6 +855,20 @@ footer p {
   display: flex;
 }
 
+.blogHead .blogPhotoContainer {
+  z-index: 10;
+  font-size: 0;
+  right: 0%;
+  -webkit-box-shadow: -40px 40px #fdfa69;
+          box-shadow: -40px 40px #fdfa69;
+  -webkit-transform: scale(1.2) translatey(-40%) translatex(12%);
+          transform: scale(1.2) translatey(-40%) translatex(12%);
+}
+
+.blogHead .blogPhotoContainer img {
+  width: 100%;
+}
+
 .blogMain {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -884,13 +896,14 @@ footer p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 80%;
+  widows: 83%;
   max-width: 1600px;
   padding-top: 5%;
 }
 
 .blogMainContainer aside {
   width: 37%;
+  margin-left: 5%;
 }
 
 .blogMainContainer aside img {
@@ -900,24 +913,22 @@ footer p {
 .blogMainContainer article {
   width: 63%;
   padding-left: 4%;
-  border: 3px solid green;
 }
 
 .blogMainContainer article .permBorderLeft {
-  padding-left: 5%;
   border-left: 7px solid #fdfa69;
   border-bottom: 7px solid #fdfa69;
 }
 
 .blogMainContainer .sideBlogPicture {
-  -webkit-transform: scale(2.5) translatey(107%) translatex(26%);
-          transform: scale(2.5) translatey(107%) translatex(26%);
+  -webkit-transform: scale(2.5) translatey(27%) translatex(26%);
+          transform: scale(2.5) translatey(27%) translatex(26%);
   left: 0%;
   width: 35%;
 }
 
 .blogMainContainer .sideBlogContent {
-  padding: 110% 0 0 0;
+  padding: 50% 0 0 0;
 }
 
 .blogMainContainer .sideBlogContent li::before {
@@ -964,12 +975,29 @@ footer p {
   right: 0%;
   -webkit-box-shadow: -40px 40px #fdfa69;
           box-shadow: -40px 40px #fdfa69;
-  -webkit-transform: scale(1.2) translatey(-40%) translatex(12%);
-          transform: scale(1.2) translatey(-40%) translatex(12%);
+  -webkit-transform: scale(1) translatey(-50%) translatex(0%);
+          transform: scale(1) translatey(-50%) translatex(0%);
 }
 
 .blogMainContainer .blogPhotoContainer img {
   width: 100%;
+}
+
+.blogMainContainer .extendFully {
+  margin-left: 4%;
+}
+
+footer {
+  background-color: #2c2c2c;
+  padding: 1% 0 1% 0;
+}
+
+footer section {
+  text-align: center;
+}
+
+footer p {
+  color: #fafafa;
 }
 
 .formHead {
@@ -981,9 +1009,9 @@ footer p {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 50vh;
-  max-height: 700px;
+  max-height: 500px;
   min-height: 400px;
 }
 
@@ -1018,7 +1046,7 @@ footer p {
   z-index: 10;
   font-size: 0;
   right: 7%;
-  top: 70%;
+  top: 60%;
   -webkit-box-shadow: -40px 40px #fdfa69;
           box-shadow: -40px 40px #fdfa69;
 }
@@ -1052,9 +1080,8 @@ footer p {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  width: 100vw;
-  height: 100%;
-  margin-bottom: 10%;
+  width: 100%;
+  padding-bottom: 10%;
   background-color: #effdf3;
 }
 
@@ -1066,8 +1093,6 @@ footer p {
       -ms-flex-pack: center;
           justify-content: center;
   width: 90%;
-  height: 100%;
-  padding-top: 10%;
 }
 
 .formMainContainer aside {
@@ -1092,6 +1117,9 @@ footer p {
 }
 
 .iconContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 5% 0 5% 0;
 }
 
@@ -1102,7 +1130,20 @@ footer p {
 }
 
 .formIcons li {
-  margin-right: 4%;
+  margin-right: 20%;
+}
+
+footer {
+  background-color: #2c2c2c;
+  padding: 1% 0 1% 0;
+}
+
+footer section {
+  text-align: center;
+}
+
+footer p {
+  color: #fafafa;
 }
 
 @media (max-width: 1600px) {
@@ -1153,9 +1194,6 @@ footer p {
   .gridSec aside, .gridSec article {
     width: 100%;
   }
-  img {
-    width: 100%;
-  }
   .homeMain .absolute {
     position: static;
   }
@@ -1170,7 +1208,7 @@ footer p {
             flex-direction: column-reverse;
   }
   article {
-    width: 100;
+    width: 100%;
   }
   .gridSingleBlog article {
     width: 100%;
@@ -1335,7 +1373,7 @@ footer p {
     width: 100%;
   }
   .blogMainContainer .sideBlogContent {
-    padding: 15% 0 0 0;
+    padding: 10% 0 10% 0;
   }
   .blogMainContainer article {
     width: 100%;
@@ -1347,6 +1385,9 @@ footer p {
   }
   .sideBlogPicture {
     display: none;
+  }
+  .commentHeaderPic {
+    width: 100%;
   }
   .commentHeaderPic img {
     height: 100px;
@@ -1364,17 +1405,24 @@ footer p {
     top: 50%;
   }
   .formMain {
-    margin-top: 25%;
+    padding-top: 25%;
+  }
+  .formMainContainer {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .formMainContainer article {
     width: 0%;
-    height: 100%;
+  }
+  .formMainContainer aside {
+    width: 50%;
   }
 }
 
 @media (max-width: 900px) {
   .formMain {
-    margin-top: 50%;
+    padding-top: 50%;
   }
 }
 
@@ -1403,15 +1451,33 @@ footer p {
     width: 85%;
     right: 5%;
   }
+  .formHead .formContainer .formCenter .formCenter .commentHorizontalCenter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .formHead .formContainer .formCenter .formCenter .commentHorizontalCenter input {
+    width: 100%;
+  }
   .formTitle h2 {
     font-size: 2rem;
     margin: 10% 0 0 0%;
   }
+}
+
+@media (max-width: 650px) {
   .formMain {
-    margin-top: 100%;
+    padding-top: 80%;
   }
-  .formMainContainer article {
-    height: 100%;
+}
+
+@media (max-width: 420px) {
+  .formMain {
+    padding-top: 110%;
   }
 }
 /*# sourceMappingURL=style.css.map */
