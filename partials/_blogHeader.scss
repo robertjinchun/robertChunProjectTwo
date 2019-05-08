@@ -19,27 +19,5 @@
             margin-top:10vh;
         }
     }
-    //The hard to position image
-    .blogPhotoContainer{
-    position:absolute;
-    width:55%;
-    z-index:10;
-    font-size:0;
-    right:0%;
-    box-shadow:-40px 40px $bTheB;
-        img{
-            width:100%;
-        }
-    }
-//container holding the picture
-    .blogPhotoContainer{
-    z-index:10;
-    font-size:0;
-    right:0%;
-    box-shadow:-40px 40px $bTheB;
-    transform: scale(1.2) translatey(-40%) translatex(12%);
-    img{
-        width:100%;
-    }
-}
+
 }
