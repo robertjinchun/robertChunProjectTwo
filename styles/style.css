@@ -213,7 +213,7 @@ h1, h2, h3, h4, span, label, nav li:nth-child(n+1):nth-child(-n+4), button, .lin
   background-repeat: no-repeat;
 }
 
-.commentHorizontalCenter, .formCenter, .formComment, .formComment textarea, footer, .homeMain .bleed, .homeMain .secondHeader {
+.commentHorizontalCenter, form, .formCenter, .formComment, textArea, .formButton, footer, .homeHeader, .ultimateWrapper, nav, .homeMain, .bleed, .gridSec, .firstPic, .secondPic, .quickContentRow, .quickContentRowTwo, .secondHeader, .singleBlog, .gallery, .extend, .homeMain .secondHeader, .blogHead, .blogHeadAlign {
   width: 100%;
 }
 
@@ -245,8 +245,21 @@ label {
 
 nav li:nth-child(n+1):nth-child(-n+4) {
   font-size: 1.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 2%;
   line-height: 29px;
   display: inline-block;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 nav li:nth-child(n+1):nth-child(-n+4) {
@@ -301,10 +314,15 @@ input {
           justify-content: space-between;
 }
 
+.commentHorizontalCenter form {
+  background-color: #effdf3;
+  padding-bottom: 10%;
+}
+
 .commentHorizontalCenter input {
   width: 47%;
   height: 61px;
-  border: 3px solid white;
+  border: 3px solid #effdf3;
   border-bottom: 3px solid #4ceea7;
 }
 
@@ -330,13 +348,7 @@ input {
   border: 3px solid #4ceea7;
 }
 
-form {
-  background-color: white;
-  width: 100%;
-}
-
 .formButton {
-  width: 100%;
   background-color: #4ceea7;
 }
 
@@ -367,7 +379,6 @@ footer p {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  width: 100%;
   height: 80vh;
   max-height: 800px;
   min-height: 600px;
@@ -377,7 +388,6 @@ footer p {
   z-index: 0;
   max-width: 1600px;
   min-height: 600px;
-  width: 100%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -401,7 +411,6 @@ nav {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  width: 100%;
   margin-top: 2%;
 }
 
@@ -441,7 +450,6 @@ nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
 }
 
 .homeMain .relative {
@@ -494,7 +502,6 @@ nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
 }
 
 .homeMain .gridSec aside, .homeMain .gridSec article {
@@ -517,7 +524,6 @@ nav ul {
           transform: scale(1) translatex(-13%) translatey(-15%);
   top: -15%;
   left: 0;
-  width: 100%;
   -webkit-box-shadow: 50px 40px #fdfa69;
           box-shadow: 50px 40px #fdfa69;
 }
@@ -532,7 +538,6 @@ nav ul {
       -ms-flex-pack: end;
           justify-content: flex-end;
   top: 15%;
-  width: 90%;
   right: 0;
   -webkit-box-shadow: -50px 40px #fdfa69;
           box-shadow: -50px 40px #fdfa69;
@@ -591,7 +596,6 @@ nav ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
   margin: 1% 7% 1% 7%;
 }
 
@@ -612,7 +616,6 @@ nav ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
 }
 
 .homeMain .sideSide {
@@ -656,7 +659,6 @@ nav ul {
       -ms-flex-pack: center;
           justify-content: center;
   height: 50vh;
-  width: 100%;
 }
 
 .homeMain .singleBlog {
@@ -671,7 +673,7 @@ nav ul {
   width: 100%;
 }
 
-.homeMain .singleBlog .gridSingleBlog {
+.homeMain .gridSingleBlog {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -681,7 +683,7 @@ nav ul {
   width: 85%;
 }
 
-.homeMain .singleBlog .gridSingleBlog article {
+.homeMain .gridSingleBlog article {
   width: 70%;
   margin-left: 5%;
   display: -webkit-box;
@@ -696,7 +698,7 @@ nav ul {
           justify-content: center;
 }
 
-.homeMain .singleBlog .gridSingleBlog aside {
+.homeMain .gridSingleBlog aside {
   width: 30%;
   margin-right: 5%;
   display: -webkit-box;
@@ -714,14 +716,14 @@ nav ul {
           align-items: center;
 }
 
-.homeMain .singleBlog .gridSingleBlog aside div {
+.homeMain .gridSingleBlog aside div {
   width: 100%;
   font-size: 0;
   -webkit-box-shadow: 50px 40px #fdfa69;
           box-shadow: 50px 40px #fdfa69;
 }
 
-.homeMain .singleBlog .buttonArea {
+.homeMain .buttonArea {
   margin: 5% 0 3% 0;
   text-align: center;
   width: 300px;
@@ -735,7 +737,6 @@ nav ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
 }
 
 .homeMain .galleryContainer {
@@ -766,19 +767,7 @@ nav ul {
 }
 
 .homeMain .extend {
-  width: 100%;
-}
-
-footer {
-  background-color: #2c2c2c;
-}
-
-footer section {
-  text-align: center;
-}
-
-footer p {
-  color: #fafafa;
+  background-color: #fafafa;
 }
 
 .blogHead {
@@ -790,7 +779,6 @@ footer p {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  width: 100%;
   height: 50vh;
   max-height: 800px;
   min-height: 600px;
@@ -798,7 +786,6 @@ footer p {
 
 .blogHead .blogHeadAlign {
   max-width: 1600px;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -827,23 +814,6 @@ footer p {
 
 .blogHead .blogPhotoContainer img {
   width: 100%;
-}
-
-.blogHead nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  width: 100%;
-  margin-top: 2%;
-}
-
-.blogHead nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .blogHead .blogPhotoContainer {
@@ -903,7 +873,9 @@ footer p {
 
 .blogMainContainer article {
   width: 63%;
+  margin-right: 5%;
   padding-left: 4%;
+  padding-bottom: 3%;
 }
 
 .blogMainContainer article .permBorderLeft {
@@ -920,6 +892,7 @@ footer p {
 
 .blogMainContainer .sideBlogContent {
   padding: 50% 0 0 0;
+  background-color: #fafafa;
 }
 
 .blogMainContainer .sideBlogContent li::before {
@@ -976,19 +949,6 @@ footer p {
 
 .blogMainContainer .extendFully {
   margin-left: 4%;
-}
-
-footer {
-  background-color: #2c2c2c;
-  padding: 1% 0 1% 0;
-}
-
-footer section {
-  text-align: center;
-}
-
-footer p {
-  color: #fafafa;
 }
 
 .formHead {

@@ -1,65 +1,57 @@
+//basically width 100%;
+.homeMain, .bleed, .gridSec, .firstPic, .secondPic, .quickContentRow, .quickContentRowTwo, .secondHeader, .singleBlog, .gallery, .extend{
+    @extend %fullBleedWrap;
+}
+//
 .homeMain{
-    // background-color:$primary;
     @include flexEnable(true, true, false, true);
-    // border:3px solid red;
-    width:100%;
-
-    .absolute{
-        // position:absolute;
-    }
     .relative{
         position:relative;
     }
     .bleed{
         background-color:$primary;
         @include flexEnable(true, true, true, true);
-        @extend %fullBleedWrap;
     }
+    //what is captured section
     .whatIsCap{
         @include flexEnable(true, true, true, true);
         text-align:center;
         max-width:1300px;
         min-height:300px;
         margin:200px 0 200px 0;
-        // border:3px solid black;
         .buttonArea{
             text-align:center;
             margin:5% 0 3% 0;
-            // width:200px;
         }
     }
+    //grid section
     .gridSec{
         @include flexEnable(true, false, false, false);
-        // border:3px solid green;
-        width:100%;
         aside, article{
             width:50%;
         }
     }
     img{
-        // object-fit:contain;
         width:100%
     }
-    //you can delete this one
+    //ghost space removing class
     .gridPics{
-        // border:3px solid teal;
         font-size:0;
-        // width:85%
     }
+    //first picture settings
     .firstPic{
         @include flexEnable (true);
         transform: scale(1) translatex(-13%) translatey(-15%);
         top:-15%;
         left:0;
-        width:100%; 
         box-shadow: 50px 40px $bTheB;
     }
+    //second picture settings
     .secondPic{
         @include flexEnable (true);
         transform: scale(1) translatex(13%) translatey(15%);
         justify-content:flex-end;
         top:15%;
-        width:90%;
         right:0;
         box-shadow: -50px 40px $bTheB;
     }
@@ -70,12 +62,9 @@
         margin-right:15%;
         align-items: flex-end;
         text-align:right;
-    
-        // justify-content:flex-end;
     }
     .topArticleText{
         @include flexEnable(true, true);
-
     }
     .oneByTwo{
         @include flexEnable(true, true, true, false);
@@ -87,13 +76,12 @@
             width:200px;
         }
     }
+    //Mid content section
     .midContentTwo{
         padding:15% 0 15% 0;
-        // max-width:1600px;
     }
     .quickContentRow{
         @include flexEnable(true, false, true, false);
-        width:100%;
         margin:1% 7% 1% 7%;
         .quickInner{
             @include flexEnable(true, true);
@@ -101,18 +89,16 @@
     }
     .quickContentRowTwo{
         @include flexEnable(true, false, true false);
-        width:100%;
     }
     .sideSide{
         @include flexEnable(true);
     }
-
+    //icon styling
     .iconContent{
         width:50px;
         height:50px;
         margin-right:20px;
         background-color:$tertiary;
-        
         border-radius:50%;
         i{
             width:50px;
@@ -120,66 +106,50 @@
             @include flexEnable(true, true, true, true);
         }
     }
+    //second header section ion the middle of the page
     .secondHeader{
     @include backgroundSet(url("../assets/banner.jpg"));
     @extend %backKeep;
     @include flexEnable(true, false, true, false);
     @extend %fullBleedWrap;
     height:50vh;
-    width:100%;
-    // height:50vh;
-    // max-height:500px;
-    // position:relative;
-    // border:3px solid red;
     }
-
-    
+    //single blog settings
     .singleBlog{
         padding:7% 0 7% 0;
         @include flexEnable(true, false, true, false);
         background-color:$primary;
         width:100%;
-        
-        .gridSingleBlog{
-            @include flexEnable(true, false, true, false);
-            // border:3px solid green;
-            width:85%;
-            // article, aside{
-            //     width:50%;
-            // }
-            article{
-                width:70%;
-                // border:3px solid blue;
-                margin-left:5%;
-                @include flexEnable(true, true, true, false);
-            }
-            aside{
-                width:30%;
-                // border:3px solid blue;
-                margin-right:5%;
-                @include flexEnable(true, true, true, true);
-                div{
-                    width:100%;
-                    font-size:0;
-                    box-shadow: 50px 40px $bTheB;
-                }
-                // div{
-                //     width:100px;
-                // }
+    }
+    .gridSingleBlog{
+        @include flexEnable(true, false, true, false);
+        width:85%;
+        article{
+            width:70%;
+            margin-left:5%;
+            @include flexEnable(true, true, true, false);
+        }
+        aside{
+            width:30%;
+            margin-right:5%;
+            @include flexEnable(true, true, true, true);
+            div{
+                width:100%;
+                font-size:0;
+                box-shadow: 50px 40px $bTheB;
             }
         }
-        .buttonArea{
-            margin:5% 0 3% 0;
-            text-align:center;
-            width:300px;
-        }
+    }
+    .buttonArea{
+        margin:5% 0 3% 0;
+        text-align:center;
+        width:300px;
     }
     .gallery{
         padding:7% 0 7% 0;
         @include flexEnable(true, false, true, false);
-        width:100%;
+        //width:100%;
         // background-color:$primary;
-        
     }
     .galleryContainer{
         @include flexEnable(true, false, true, false);
@@ -197,17 +167,6 @@
     }
     
     .extend{
-        width:100%;
-    }
-}
-footer{
-    @extend %fullBleedWrap;
-    background-color:$footColor;
-    section{
-        text-align:center;
-        
-    }
-    p{
-        color:$secondary;
+        background-color:$secondary;
     }
 }

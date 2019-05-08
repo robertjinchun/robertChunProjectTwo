@@ -1,63 +1,49 @@
+//**********The CSS fofor the home header page
+.homeHeader, .ultimateWrapper, nav{
+@extend %fullBleedWrap;
+}
 .homeHeader{
-
     @include backgroundSet(url("../assets/headerImage.jpg"));
     @extend %backKeep;
     @include flexEnable(true, false, true, false);
     position:relative;
-    // border:3px solid red;
-    width:100%;
     height:80vh;
     max-height:800px;
     min-height:600px;
 }
-    
+//what more can I say? the ultimate wrapper?
 .ultimateWrapper{
     z-index:0;
     max-width:1600px;
     min-height:600px;
-    width:100%;
     height:100%;
     @include flexEnable(true, true, false, true);
     justify-content:space-between;
-    // border:3px solid orange;
 }
+//Custom Nav for Home Page
 nav{
     @include flexEnable(true);
     justify-content:flex-end;
-    width:100%;
     margin-top:2%;
     ul{
         @include flexEnable();
     }
 }
+// Crazy hard to place floating picture
 .photoContainer{
     position:absolute;
     display:visible;
     width:40%;
-    // min-width:600px;
-    // min-height:600px;
     z-index:-10;
     font-size:0;
     bottom:-25%;
     right:0;
-        // max-width:700px;
     max-height:auto;
     border-color:$bTheB;
     border-left:45px solid $bTheB;
     border-top:50px solid $bTheB;
     border-bottom:50px solid $bTheB;
-        // background-color:yellow;
     img{
         width:100%;
-        // min-height:600px;
-        // min-width:600px;
     }
-    }
-.mainTitle{
-    // border:3px solid brown;
-        // @extend .flexEnableLR;
-        // justify-content:center;
-        //height:100%;
 }
-
-
