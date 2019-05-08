@@ -183,23 +183,21 @@ html {
   font-size: 20px;
 }
 
-a, li, ul, h1, h2, h3, h4, header, body, footer {
+a, li, ul, h1, h2, h3, h4, header, body, footer, p, li {
   color: black;
   text-decoration: none;
   list-style-type: none;
-  text-transform: uppercase;
   margin: 0;
   padding: 0;
 }
 
+a, li, ul, h1, h2, h3, h4, header, body, footer {
+  text-transform: uppercase;
+}
+
 p, li {
-  color: black;
-  text-decoration: none;
-  list-style-type: none;
   text-transform: capitalize;
   line-height: 32px;
-  margin: 0;
-  padding: 0;
 }
 
 h1, h2, h3, h4, span, label, nav li:nth-child(n+1):nth-child(-n+4), button, .linkButton {
@@ -215,7 +213,7 @@ h1, h2, h3, h4, span, label, nav li:nth-child(n+1):nth-child(-n+4), button, .lin
   background-repeat: no-repeat;
 }
 
-footer, .homeMain .bleed, .homeMain .secondHeader {
+.commentHorizontalCenter, .formCenter, .formComment, .formComment textarea, footer, .homeMain .bleed, .homeMain .secondHeader {
   width: 100%;
 }
 
@@ -251,6 +249,10 @@ nav li:nth-child(n+1):nth-child(-n+4) {
   display: inline-block;
 }
 
+nav li:nth-child(n+1):nth-child(-n+4) {
+  margin: 0 30px 0 0;
+}
+
 nav li:nth-child(5) {
   display: none;
 }
@@ -276,10 +278,6 @@ input {
   font-family: 'Roboto', sans-serif;
 }
 
-nav li:nth-child(n+2):nth-child(-n+3) {
-  margin: 0 15px 0 15px;
-}
-
 .buttonArea {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -298,7 +296,6 @@ nav li:nth-child(n+2):nth-child(-n+3) {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -325,16 +322,10 @@ nav li:nth-child(n+2):nth-child(-n+3) {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
 }
 
-.formComment {
-  width: 100%;
-}
-
-.formComment input {
-  width: 100%;
-  height: 250px;
+.formComment textarea {
+  height: 300px;
   margin: 30px 0 30px 0;
   border: 3px solid #4ceea7;
 }
@@ -1447,11 +1438,7 @@ footer p {
   nav li:nth-child(5) i {
     font-size: 30px;
   }
-  .formHead .formContainer {
-    width: 85%;
-    right: 5%;
-  }
-  .formHead .formContainer .formCenter .formCenter .commentHorizontalCenter {
+  .commentHorizontalCenter {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1460,7 +1447,7 @@ footer p {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .formHead .formContainer .formCenter .formCenter .commentHorizontalCenter input {
+  .commentHorizontalCenter input {
     width: 100%;
   }
   .formTitle h2 {

@@ -285,24 +285,14 @@
     }
     }
 }
-    .formHead{
-        .formContainer{
-            width:85%;
-            right:5%;
-            .formCenter{
-                .formCenter{
-                    .commentHorizontalCenter{
+.commentHorizontalCenter{
                         display:flex;
                         flex-direction:column;
                         input{
                             width:100%;
                         }
                     }
-                }
-            }
-        }
 
-    }
     .formTitle{
         h2{
             font-size:2rem;
